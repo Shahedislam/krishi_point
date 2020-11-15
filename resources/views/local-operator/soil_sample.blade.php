@@ -709,7 +709,8 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <form id="signupForm1" method="post" class="form-horizontal">
+                                        <form id="soil" action="{{ route("soil.store") }}" method="POST">
+                                            @csrf
                                             <div class="form-group">
                                                 <label class="control-label" for="firstname1">NAME</label>
                                                 <div class="mb-2">
@@ -719,13 +720,13 @@
                                             <div class="form-group">
                                                 <label class="control-label" for="lastname1">FARMER-ID</label>
                                                 <div class="mb-2">
-                                                    <input type="text" class="form-control" id="FARMER-ID" name="FARMER-ID" placeholder="FARMER-ID" />
+                                                    <input type="text" class="form-control" id="FARMER-ID" name="FARMER_ID" placeholder="FARMER_ID" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="control-label" for="username1">PHONE-NO</label>
                                                 <div class="mb-2">
-                                                    <input type="text" class="form-control" id="username1" name="PHONE-NO" placeholder="PHONE-NO" />
+                                                    <input type="text" class="form-control" id="username1" name="PHONE_NO" placeholder="PHONE_NO" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -737,9 +738,16 @@
                                             <div class="form-group">
                                                 <label class="control-label" for="password1">SOIL-ID</label>
                                                 <div class="mb-2">
-                                                    <input type="password" class="form-control" id="SOIL-ID" name="SOIL-ID" placeholder="SOIL-ID" />
+                                                    <input type="password" class="form-control" id="SOIL-ID" name="SOIL_ID" placeholder="SOIL-ID" />
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <label class="control-label" for="password1">SOIL_De-datelivery</label>
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control" id="delivery" name="delivery" placeholder="SOIL-ID" />
+                                                </div>
+                                            </div>
+
 
                                             <div class="form-group">
                                                 <div class="form-check">

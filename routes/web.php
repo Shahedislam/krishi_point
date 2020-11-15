@@ -17,3 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get("/operator_login","local_operator@index");
+
+Auth::routes();
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/soil', 'ProgramController@view');
+
+
+Route::post('/soil_sample', 'ProgramController@save')->name('soil.store');
+
