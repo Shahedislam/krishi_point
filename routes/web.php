@@ -22,8 +22,12 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//soil sample.......*******
 Route::get('/soil', 'ProgramController@view');
-
-
 Route::post('/soil_sample', 'ProgramController@save')->name('soil.store');
+
+//crops sample
+Route::get('/crops', 'CropsSampleController@crops_view');
+Route::post('/crops_sample', 'CropsSampleController@crops_sample')->name('crops.store');
 

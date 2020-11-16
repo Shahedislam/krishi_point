@@ -476,16 +476,16 @@
                             </ul>
                         </li>
                         <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span
-                                class="nav-title">Chat</span></a> </li>
+                                    class="nav-title">Chat</span></a> </li>
                         <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-calendar"></i><span
-                                class="nav-title">Calendar</span></a>
+                                    class="nav-title">Calendar</span></a>
                             <ul aria-expanded="false">
                                 <li> <a href='calendar-full.html'>Full Calendar</a> </li>
                                 <li> <a href='calendar-list.html'>Calendar List</a> </li>
                             </ul>
                         </li>
                         <li><a href="mail-inbox.html" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
-                                class="nav-title">Mail</span></a> </li>
+                                    class="nav-title">Mail</span></a> </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-bag"></i>
                                 <span class="nav-title">UI Kit</span></a>
@@ -594,7 +594,7 @@
                                 <li> <a href="form-editors.html">Editors</a> </li>
                                 <li> <a href="form-elements.html">Elements</a> </li>
                                 <li> <a href="form-file-upload.html">Drop Zone
-                                </a> </li>
+                                    </a> </li>
                                 <li> <a href="form-input-groups.html">Input Groups</a> </li>
                                 <li> <a href="form-inputmask.html">Input Masks</a> </li>
                                 <li> <a href="form-layouts.html">Forms Layouts</a> </li>
@@ -603,7 +603,7 @@
                                 <li> <a href="form-range-slider.html">Range Slider</a> </li>
                                 <li> <a href="form-crops.html">Selects</a> </li>
                                 <li> <a href="form-switchers.html">Switchers</a> </li>
-                                <li class="active"> <a href="form-validation.html">Save Farmer Information</a> </li>
+                                <li class="active"> <a href="form-soil.html">Save Farmer Information</a> </li>
                             </ul>
                         </li>
                         <li class="nav-static-title">Extra Components</li>
@@ -709,44 +709,60 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form id="signupForm1" method="post" class="form-horizontal">
+                                <form id="crops" action="{{ route("crops.store") }}" method="POST">
+                                    @csrf
+
                                     <div class="form-group">
-                                        <label class="control-label" for="firstname1">NAME</label>
+                                        <label class="control-label" for="firstname1">Farmer-NAME</label>
                                         <div class="mb-2">
                                             <input type="text" class="form-control" id="NAME" name="NAME" placeholder="NAME" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="lastname1">FARMER-ID</label>
+                                        <label class="control-label" for="farmer_id">FARMER-ID</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="FARMER-ID" name="FARMER-ID" placeholder="FARMER-ID" />
+                                            <input type="text" class="form-control" id="FARMER-ID" name="FARMER_ID" placeholder="FARMER_ID" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="username1">PHONE-NO</label>
+                                        <label class="control-label" for="phone_no">PHONE-NO</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="username1" name="PHONE-NO" placeholder="PHONE-NO" />
+                                            <input type="text" class="form-control" id="username1" name="PHONE_NO" placeholder="PHONE_NO" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="email1">ADDRESS</label>
+                                        <label class="control-label" for="address">ADDRESS</label>
                                         <div class="mb-2">
                                             <input type="text" class="form-control" id="ADDRESS" name="ADDRESS" placeholder="ADDRESS" />
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="password1">CROPS-NAME</label>
+                                        <label class="control-label" for="crops">crops-ID</label>
                                         <div class="mb-2">
-                                            <input type="password" class="form-control" id="CROPS-NAME" name="CROPS-NAME" placeholder="CROPS-NAME" />
+                                            <input type="text" class="form-control" id="crops_id" name="crops_id" placeholder="crops-ID" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="crops">crops-Name</label>
+                                            <div class="mb-2">
+                                                <input type="text" class="form-control" id="crops_Name" name="crops_Name" placeholder="crops-Name" />
+                                            </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="delivery">Date-of-sample-Submmission</label>
+                                        <div class="mb-2">
+                                            <input type="date" class="form-control" id="sample" name="sample" placeholder="sample-date" />
                                         </div>
                                     </div>
 
+                                    </div>
                                     <div class="form-group">
-                                        <label class="control-label" for="password1">CROPS-ID</label>
+                                        <label class="control-label" for="delivery">Crops_Delivery</label>
                                         <div class="mb-2">
-                                            <input type="password" class="form-control" id="CROPS-ID" name="CROPS-ID" placeholder="CROPS-ID" />
+                                            <input type="date" class="form-control" id="delivery" name="delivery" placeholder="Delivery-Date" />
                                         </div>
                                     </div>
+
 
                                     <div class="form-group">
                                         <div class="form-check">
@@ -757,8 +773,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Sign
-                                            up</button>
+                                        <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Submit</button>
                                     </div>
                                 </form>
                             </div>

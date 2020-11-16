@@ -730,21 +730,21 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="email1">ADDRESS</label>
+                                                <label class="control-label" for="ADDRESS">ADDRESS</label>
                                                 <div class="mb-2">
                                                     <input type="text" class="form-control" id="ADDRESS" name="ADDRESS" placeholder="ADDRESS" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="password1">SOIL-ID</label>
+                                                <label class="control-label" for="SOIL-ID">SOIL-ID</label>
                                                 <div class="mb-2">
-                                                    <input type="password" class="form-control" id="SOIL-ID" name="SOIL_ID" placeholder="SOIL-ID" />
+                                                    <input type="text" class="form-control" id="SOIL-ID" name="SOIL_ID" placeholder="SOIL-ID" />
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="control-label" for="password1">SOIL_De-datelivery</label>
+                                                <label class="control-label" for="delivery">SOIL_Delivery</label>
                                                 <div class="mb-2">
-                                                    <input type="text" class="form-control" id="delivery" name="delivery" placeholder="SOIL-ID" />
+                                                    <input type="date" class="form-control" id="delivery" name="delivery" placeholder="delivery-date" />
                                                 </div>
                                             </div>
 
@@ -758,8 +758,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Sign
-                                                    up</button>
+                                                <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Submit</button>
                                             </div>
                                         </form>
                                     </div>
