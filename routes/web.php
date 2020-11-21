@@ -23,6 +23,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+Route::get('/m', function () {
+    return view('local-operator.mainpage');
+});
+
 //soil sample.......*******
 Route::get('/soil', 'ProgramController@view');
 Route::post('/soil_sample', 'ProgramController@save')->name('soil.store');

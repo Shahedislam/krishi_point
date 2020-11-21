@@ -41,7 +41,7 @@
                     <!-- begin navbar-header -->
                     <div class="navbar-header d-flex align-items-center">
                         <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="mainpage.blade.php">
                             <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
                             <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
                         </a>
@@ -464,7 +464,7 @@
                                     <span class="nav-label label label-danger">9</span>
                                 </a>
                                 <ul aria-expanded="false">
-                                    <li> <a href='index.html'>Default</a> </li>
+                                    <li> <a href='mainpage.blade.php'>Default</a> </li>
                                     <li> <a href='index-ecommerce.html'>Ecommerce</a> </li>
                                     <li> <a href='index-car-dealer.html'>Car Dealer</a> </li>
                                     <li> <a href='index-stock-market.html'>Stock Market</a> </li>
@@ -685,7 +685,7 @@
                                         <nav>
                                             <ol class="breadcrumb p-0 m-b-0">
                                                 <li class="breadcrumb-item">
-                                                    <a href="index.html"><i class="ti ti-home"></i></a>
+                                                    <a href="mainpage.blade.php"><i class="ti ti-home"></i></a>
                                                 </li>
                                                 <li class="breadcrumb-item">
                                                     Forms
