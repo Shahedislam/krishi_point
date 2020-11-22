@@ -27,6 +27,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/m', function () {
     return view('local-operator.mainpage');
 });
+Route::get('/invoice', function () {
+    return view('local-operator.invoice');
+});
+Route::get('/n', function () {
+    return view('local-operator.style');
+});
+Route::get('/index', function () {
+    return view('local-operator.index');
+});
 
 //soil sample.......*******
 Route::get('/soil', 'ProgramController@view');

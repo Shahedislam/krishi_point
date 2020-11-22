@@ -43,7 +43,7 @@
                 <!-- begin navbar-header -->
                 <div class="navbar-header d-flex align-items-center">
                     <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
-                    <a class="navbar-brand" href="mainpage.blade.php">
+                    <a class="navbar-brand" href="index.html">
                         <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
                         <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
                     </a>
@@ -466,7 +466,7 @@
                                 <span class="nav-label label label-danger">9</span>
                             </a>
                             <ul aria-expanded="false">
-                                <li> <a href='mainpage.blade.php'>Default</a> </li>
+                                <li> <a href='index.html'>Default</a> </li>
                                 <li> <a href='index-ecommerce.html'>Ecommerce</a> </li>
                                 <li> <a href='index-car-dealer.html'>Car Dealer</a> </li>
                                 <li> <a href='index-stock-market.html'>Stock Market</a> </li>
@@ -588,7 +588,7 @@
                                 <li> <a href="chart-knob.html">Knob Chart</a> </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i class="nav-icon ti ti-pencil-alt"></i>
                                 <span class="nav-title">Forms</span> </a>
                             <ul aria-expanded="false">
@@ -605,7 +605,7 @@
                                 <li> <a href="form-range-slider.html">Range Slider</a> </li>
                                 <li> <a href="form-crops.html">Selects</a> </li>
                                 <li> <a href="form-switchers.html">Switchers</a> </li>
-                                <li class="active"> <a href="form-soil.html">Save Farmer Information</a> </li>
+                                <li> <a href="form-soil.html">Validation</a> </li>
                             </ul>
                         </li>
                         <li class="nav-static-title">Extra Components</li>
@@ -618,7 +618,7 @@
                                 <li> <a href="maps-mapael.html">Mapael Maps</a> </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span
                                     class="nav-title">Pages</span><span class="nav-label label label-primary">12</span></a>
                             <ul aria-expanded="false">
@@ -626,7 +626,7 @@
                                 <li> <a href="page-clients.html">Clients</a> </li>
                                 <li> <a href="page-contacts.html">Contacts</a> </li>
                                 <li> <a href="page-employees.html">Employees</a> </li>
-                                <li> <a href="page-faq.html">FAQ</a> </li>
+                                <li class="active"> <a href="page-faq.html">FAQ</a> </li>
                                 <li> <a href="page-file-manager.html">File Manager</a> </li>
                                 <li> <a href="page-gallery.html">Gallery</a> </li>
 
@@ -681,129 +681,164 @@
                             <!-- begin page title -->
                             <div class="d-block d-sm-flex flex-nowrap align-items-center">
                                 <div class="page-title mb-2 mb-sm-0">
-                                    <h1>CROPS-SAMPLE</h1>
+                                    <h1>Invoice Details</h1>
                                 </div>
                                 <div class="ml-auto d-flex align-items-center">
                                     <nav>
                                         <ol class="breadcrumb p-0 m-b-0">
                                             <li class="breadcrumb-item">
-                                                <a href="mainpage.blade.php"><i class="ti ti-home"></i></a>
+                                                <a href="index.html"><i class="ti ti-home"></i></a>
                                             </li>
                                             <li class="breadcrumb-item">
-                                                Forms
+                                                Pages
                                             </li>
-                                            <li class="breadcrumb-item active text-primary" aria-current="page">CROPS-SAMPLE</li>
+                                            <li class="breadcrumb-item active text-primary" aria-current="page">FAQ</li>
                                         </ol>
                                     </nav>
                                 </div>
                             </div>
                             <!-- end page title -->
                         </div>
-                    </div>
-                    <!-- end row -->
-                    <!-- start Validation row -->
+                        <div class="col-md-12 m-b-30">
 
-                    <div class="col-sm-12 col-lg-12 col-xxl-12 mb-30">
-                        <div class="card card-statistics">
-                            <div class="card-header">
-                                <div class="card-heading">
-                                    <h4 class="card-title">Crops-Sample-Collecting</h4>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <form id="crops" action="{{ route("crops.store") }}" method="POST">
-                                    @csrf
+                    <table id="meta">
+                        <tr>
+                            <td></td>
+                            <td class="meta-head">Invoice Number</td>
 
-                                    <div class="form-group">
-                                        <label class="control-label" for="firstname1">Farmer-NAME</label>
-                                        <div class="mb-2">
-                                            <input type="text" class="form-control" id="NAME" name="NAME" placeholder="NAME" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="farmer_id">FARMER-ID</label>
-                                        <div class="mb-2">
-                                            <input type="text" class="form-control" id="FARMER-ID" name="FARMER_ID" placeholder="FARMER_ID" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="phone_no">PHONE-NO</label>
-                                        <div class="mb-2">
-                                            <input type="text" class="form-control" id="username1" name="PHONE_NO" placeholder="PHONE_NO" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="address">ADDRESS</label>
-                                        <div class="mb-2">
-                                            <input type="text" class="form-control" id="ADDRESS" name="ADDRESS" placeholder="ADDRESS" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="crops">crops-ID</label>
-                                        <div class="mb-2">
-                                            <input type="text" class="form-control" id="crops_id" name="crops_id" placeholder="crops-ID" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label" for="crops">crops-Name</label>
-                                            <div class="mb-2">
-                                                <input type="text" class="form-control" id="crops_Name" name="crops_Name" placeholder="crops-Name" />
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="meta-head">Date</td>
+
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="meta-head">Time</td>
+
+
+
+                        </tr>
+
+                    </table>
+                            <br>
+
+                            <div class="col-md-12 m-b-30">
+
+                                <table id="meta">
+                                    <tr>
+
+                                        <td></td>
+                                        <td class="meta-head">Farmer-NAME </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+
+                                        <td class="meta-head">Farmer-ID</td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="meta-head">Phone-NO</td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td class="meta-head">Address</td>
+
+
+
+                                    </tr>
+
+                                </table>
+
+                </div>
+                <div>
+
+                <table id="items">
+
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Unit Cost</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+
+                    <tr class="item-row">
+                        <td class="item-name"><div class="delete-wpr"><textarea></textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
+                        <td class="description"><textarea></textarea></td>
+                        <td><textarea class="cost"></textarea></td>
+                        <td><textarea class="qty"></textarea></td>
+                        <td><textarea class="prc"></textarea></td>
+                        <td><span class="price"></span></td>
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td colspan="2" class="blank"> </td>
+                        <td colspan="2" class="total-line">Subtotal</td>
+                        <td class="total-value"><div id="subtotal"></div></td>
+                    </tr>
+                    <tr>
+
+
+                        <td colspan="2" class="blank"> </td>
+                        <td colspan="2" class="total-line">Amount Paid</td>
+
+
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="blank"> </td>
+                        <td colspan="2" class="total-line balance">Balance Due</td>
+                        <td class="total-value balance"><div class="due"></div></td>
+                    </tr>
+
+                </table>
+                </div>
+                        x<div class="modal-footer">
+
+                            <button type="button" class="btn btn-success">print</button>
+                        </div>
+
+
+
+
+
+
+                <!-- end row -->
+                    <!--faq-contant-start-->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="delivery">Date-of-sample-Submmission</label>
-                                        <div class="mb-2">
-                                            <input type="date" class="form-control" id="sample" name="sample" placeholder="sample-date" />
                                         </div>
                                     </div>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="delivery">Crops_Delivery</label>
-                                        <div class="mb-2">
-                                            <input type="date" class="form-control" id="delivery" name="delivery" placeholder="Delivery-Date" />
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="agree1" name="agree1">
-                                            <label class="form-check-label" for="agree1">
-                                                Please agree to our policy
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Submit</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                    <!--faq-contant-end-->
                 </div>
-                <!-- end Validation row  -->
+                <!-- end container-fluid -->
             </div>
-            <!-- end container-fluid -->
+            <!-- end app-main -->
         </div>
-        <!-- end app-main -->
-    </div>
-    <!-- end app-container -->
-    <!-- begin footer -->
-    <footer class="footer">
-        <div class="row">
-            <div class="col-12 col-sm-6 text-center text-sm-left">
+        <!-- end app-container -->
+        <!-- begin footer -->
 
-            </div>
-            <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
-                <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer -->
-</div>
-<!-- end app-wrap -->
+        <!-- end footer -->
+    </div>
+    <!-- end app-wrap -->
 </div>
 <!-- end app -->
 

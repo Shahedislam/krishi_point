@@ -403,7 +403,7 @@
                                 <ul aria-expanded="false">
                                     <li class="active"> <a href='mainpage.blade.php'></a> </li>
                                     <li> <a href='index-ecommerce.html'>farmer-info</a> </li>
-                                    <li> <a href='index-car-dealer.html'>soil-sample</a> </li>
+                                    <li> <a href='local-operator.soil_sample.blade.php'>soil-sample</a> </li>
                                     <li> <a href='index-stock-market.html'>suppiler-assign</a> </li>
                                     <li> <a href='index-dating.html'>crops-sample</a> </li>
                                     <li> <a href='index-job-portal.html'>sample-result</a> </li>
