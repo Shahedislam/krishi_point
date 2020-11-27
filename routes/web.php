@@ -27,9 +27,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/m', function () {
     return view('local-operator.mainpage');
 });
-Route::get('/invoice', function () {
-    return view('local-operator.invoice');
-});
 Route::get('/n', function () {
     return view('local-operator.style');
 });
@@ -44,4 +41,10 @@ Route::post('/soil_sample', 'ProgramController@save')->name('soil.store');
 //crops sample
 Route::get('/crops', 'CropsSampleController@crops_view');
 Route::post('/crops_sample', 'CropsSampleController@crops_sample')->name('crops.store');
+
+Route::get('/payment', 'PaymentController@payment');
+Route::post('/paymentform', 'PaymentController@payment_process')->name('payment.store');
+
+Route::get('/invoice', 'invoice@invoice');
+
 

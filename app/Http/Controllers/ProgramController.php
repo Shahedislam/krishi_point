@@ -18,7 +18,8 @@ class ProgramController extends Controller
         $soil->SOIL_ID = $request->SOIL_ID;
         $soil->delivery = $request-> delivery;
         $soil->save();
-        return redirect("/home");
+        $soil_id=$soil->id;
+        return view("local-operator.payment",compact('soil_id'));
 
     }
     public function view()
