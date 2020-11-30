@@ -710,7 +710,8 @@
                 <!-- begin container-fluid -->
                 <div class="container-fluid">
                     <!-- begin row -->
-                    <div class="row card ">
+                    <div class="row card " id="printdata">
+
                         <div class="col-md-12 m-b-30">
                             <!-- begin page title -->
                             <div class="d-block  d-sm-flex flex-nowrap align-items-center">
@@ -727,17 +728,13 @@
                                 <tr>
                                     <td></td>
                                     <td class="meta-head">Invoice Number</td>
+                                    <td>{{$soil_info->id}}</td>
 
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td class="meta-head">Date</td>
-
-
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="meta-head">Time</td>
+                                    <td>{{$soil_info->created_at}}</td>
 
 
                                 </tr>
@@ -752,18 +749,21 @@
 
                                         <td></td>
                                         <td class="meta-head">Farmer-NAME</td>
-
+<td>{{$soil_info->NAME}}</td>
                                     </tr>
                                     <tr>
                                         <td></td>
 
                                         <td class="meta-head">Farmer-ID</td>
+                                        <td>{{$soil_info->FARMER_ID}}</td>
+
 
 
                                     </tr>
                                     <tr>
                                         <td></td>
                                         <td class="meta-head">Phone-NO</td>
+                                        <td>{{$soil_info->PHONE_NO}}</td>
 
 
                                     </tr>
@@ -771,6 +771,7 @@
                                     <tr>
                                         <td></td>
                                         <td class="meta-head">Address</td>
+                                        <td>{{$soil_info->ADDRESS}}</td>
 
 
                                     </tr>
@@ -789,7 +790,13 @@
                                         <th>Quantity</th>
                                         <th>Total Cost</th>
                                     </tr>
-
+                                    <tr>
+                                        <td>{{$soil_info->Payment_number}}</td>
+                                        <td>{{$soil_info->test_name}}</td>
+                                        <td>{{$soil_info->price}}</td>
+                                        <td>{{$soil_info->test_count}}</td>
+                                        <td>{{$soil_info->total_price}}</td>
+                                    </tr>
 
 
                                     {{--<tr>
@@ -820,7 +827,7 @@
 
                             <div class="modal-footer">
 
-                                <button type="button" class="btn btn-success">print</button>
+                                <button type="button" class="btn btn-success" onclick="printDiv('printdata')">print</button>
                             </div>
 
 
@@ -857,6 +864,19 @@
 
 <!-- custom app -->
 <script src="assets/js/app.js"></script>
+<script>
+    function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+    }
+
+</script>
 </body>
 
 

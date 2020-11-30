@@ -33,6 +33,10 @@ Route::get('/n', function () {
 Route::get('/index', function () {
     return view('local-operator.index');
 });
+Route::get('/cover', function () {
+    return view('Tester.cover');
+});
+
 
 //soil sample.......*******
 Route::get('/soil', 'ProgramController@view');
@@ -46,5 +50,6 @@ Route::get('/payment', 'PaymentController@payment');
 Route::post('/paymentform', 'PaymentController@payment_process')->name('payment.store');
 
 Route::get('/invoice', 'invoice@invoice');
+
 
 

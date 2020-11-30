@@ -727,7 +727,7 @@
                                     <div class="form-group">
                                         <label class="control-label" for="lastname1">Test Name</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="Test_Name" name="Test_Name" placeholder="Test Name" />
+                                            <input type="text" class="form-control" id="test_name" name="test_name" placeholder="Test Name" />
                                         </div>
                                     </div>
                                     <div class="form-group">

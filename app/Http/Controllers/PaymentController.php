@@ -23,7 +23,7 @@ class PaymentController extends Controller
         if($request->soil_id!=null){
             $payment=new payment();
             $payment->Payment_number=$request->Payment_Number;
-            $payment->Test_Name=$request->Test_Name;
+            $payment->test_name=$request->test_name;
             $payment->price=$request->price;
             $payment->test_count=$request->test_count;
             $payment->total_price=$request->total_price;

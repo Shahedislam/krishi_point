@@ -12,9 +12,9 @@ class invoice extends Controller
     {
         $value = $request->session()->get('soil_id');
         $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where('programs.id',$value)->first();
-         dd($soil_info);
 
 
-        return view('local-operator.invoice');
+
+        return view('local-operator.invoice',compact('soil_info'));
     }
 }
