@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\program;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class ProgramController extends Controller
 {
@@ -26,5 +28,12 @@ class ProgramController extends Controller
     {
         return view('local-operator.soil_sample');
     }
+
+    public function soil_view()
+    {
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->get();
+        return view("local-operator.soil_view",compact('soil_info'));
+    }
+
 
 }

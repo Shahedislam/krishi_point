@@ -749,7 +749,7 @@
 
                                         <td></td>
                                         <td class="meta-head">Farmer-NAME</td>
-<td>{{$soil_info->NAME}}</td>
+                                <td>{{$soil_info->NAME}}</td>
                                     </tr>
                                     <tr>
                                         <td></td>

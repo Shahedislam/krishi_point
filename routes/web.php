@@ -49,7 +49,14 @@ Route::post('/crops_sample', 'CropsSampleController@crops_sample')->name('crops.
 Route::get('/payment', 'PaymentController@payment');
 Route::post('/paymentform', 'PaymentController@payment_process')->name('payment.store');
 
+//soil view
+Route::get('/soilview', 'ProgramController@soil_view');
+
 Route::get('/invoice', 'invoice@invoice');
+
+//supplier
+Route::get('/info', 'SupplierController@supplier_info');
+Route::post('/infostore', 'SupplierController@reg')->name('info.store');
 
 
 
