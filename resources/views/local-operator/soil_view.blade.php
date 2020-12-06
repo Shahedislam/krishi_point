@@ -709,7 +709,7 @@
                                                         <td>{{$soil->test_name}}</td>
                                                         <td>{{$soil->SOIL_ID}}</td>
                                                         <td>{{$soil->Payment_number}}</td>
-                                                        <td><a href="#" class="btn btn-warning">Assign</a></td>
+                                                        <td><a href='{{$value->id}}' class="btn btn-warning">Assign</a></td>
 
                                                     </tr>
                                                 @endforeach

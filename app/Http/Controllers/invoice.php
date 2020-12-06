@@ -17,4 +17,14 @@ class invoice extends Controller
 
         return view('local-operator.invoice',compact('soil_info'));
     }
+
+
+    public function supplier_show()
+    {
+
+
+
+    }
+
+
 }
