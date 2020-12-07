@@ -22,7 +22,7 @@ class invoice extends Controller
     public function supplier_show()
     {
 
-
+      return view('local-operator.supplier_view');
 
     }
 

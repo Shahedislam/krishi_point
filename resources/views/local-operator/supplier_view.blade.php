@@ -11,13 +11,13 @@
     <meta content="Potenz Global Solutions" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- plugin stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors.css" />
     <!-- app style -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         <div class="loader">
             <div class="h-100 d-flex justify-content-center">
                 <div class="align-self-center">
-                    <img src="assets/img/loader/loader.svg" alt="loader">
+                    <img src="../assets/img/loader/loader.svg" alt="loader">
                 </div>
             </div>
         </div>
@@ -43,8 +43,8 @@
                 <div class="navbar-header d-flex align-items-center">
                     <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
-                        <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
+                        <img src="../assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
+                        <img src="../assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -197,7 +197,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/03.jpg" alt="user3">
+                                                                <img class="img-fluid" src="../assets/img/avtar/03.jpg" alt="user3">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Brianing Leyon</p>
@@ -210,7 +210,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/01.jpg" alt="user">
+                                                                <img class="img-fluid" src="../assets/img/avtar/01.jpg" alt="user">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Jimmyimg Leyon</p>
@@ -223,7 +223,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/02.jpg" alt="user2">
+                                                                <img class="img-fluid" src="../assets/img/avtar/02.jpg" alt="user2">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Brainjon Leyon</p>
@@ -236,7 +236,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/04.jpg" alt="user4">
+                                                                <img class="img-fluid" src="../assets/img/avtar/04.jpg" alt="user4">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Smithmin Leyon</p>
@@ -249,7 +249,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/05.jpg" alt="user5">
+                                                                <img class="img-fluid" src="../assets/img/avtar/05.jpg" alt="user5">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Jennyns Leyon</p>
@@ -262,7 +262,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/06.jpg" alt="user6">
+                                                                <img class="img-fluid" src="../assets/img/avtar/06.jpg" alt="user6">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Demian Leyon</p>
@@ -399,7 +399,7 @@
                             </li>
                             <li class="nav-item dropdown user-profile">
                                 <a href="javascript:void(0)" class="nav-link dropdown-toggle " id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="assets/img/avtar/02.jpg" alt="avtar-img">
+                                    <img src="../assets/img/avtar/02.jpg" alt="avtar-img">
                                     <span class="bg-success user-status"></span>
                                 </a>
                                 <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
@@ -703,13 +703,6 @@
                                             </tr>
 
                                                 <tr>
-                                                    <td>{{$soil->NAME}}</td>
-                                                    <td>{{$soil->FARMER_ID}}</td>
-                                                    <td>{{$soil->ADDRESS}}</td>
-                                                    <td>{{$soil->PHONE_NO}}</td>
-                                                    <td>{{$soil->test_name}}</td>
-                                                    <td>{{$soil->SOIL_ID}}</td>
-                                                    <td>{{$soil->Payment_number}}</td>
 
 
                                                 </tr>
@@ -748,10 +741,10 @@
 <!-- end app -->
 
 <!-- plugins -->
-<script src="assets/js/vendors.js"></script>
+<script src="../assets/js/vendors.js"></script>
 
 <!-- custom app -->
-<script src="assets/js/app.js"></script>
+<script src="../assets/js/app.js"></script>
 </body>
 
 </html>

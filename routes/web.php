@@ -59,4 +59,9 @@ Route::get('/info', 'SupplierController@supplier_info');
 Route::post('/infostore', 'SupplierController@reg')->name('info.store');
 
 
+Route::get('/supplier', 'invoice@supplier_show');
+//assign supplier
+Route::get('/assign/{id}', 'SupplierController@assign_supplier');
+
+
 

@@ -5,6 +5,7 @@ use App\supplier;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class SupplierController extends Controller
@@ -35,6 +36,14 @@ class SupplierController extends Controller
     public function supplier_info()
     {
         return view('supplier.mainform');
+    }
+
+
+    public function assign_supplier($id)
+    {
+
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where ('programs.id',$id)->first();
+        return view('local-operator.supplier_view');
     }
 
 }
