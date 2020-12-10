@@ -755,6 +755,7 @@
                                         <td></td>
 
                                         <td class="meta-head">Farmer-ID</td>
+
                                         <td>{{$soil_info->FARMER_ID}}</td>
 
 
@@ -791,6 +792,7 @@
                                         <th>Total Cost</th>
                                     </tr>
                                     <tr>
+
                                         <td>{{$soil_info->Payment_number}}</td>
                                         <td>{{$soil_info->test_name}}</td>
                                         <td>{{$soil_info->price}}</td>

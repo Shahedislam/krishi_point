@@ -1,23 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Mentor - Bootstrap 4 Admin Dashboard Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta content="Admin template that can be used to build dashboards for CRM, CMS, etc." name="description" />
-    <meta content="Potenz Global Solutions" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta content="Admin template that can be used to build dashboards for CRM, CMS, etc." name="description"/>
+    <meta content="Potenz Global Solutions" name="author"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/img/favicon.ico">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- plugin stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors.css"/>
     <!-- app style -->
-    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -43,11 +42,13 @@
                 <div class="navbar-header d-flex align-items-center">
                     <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
                     <a class="navbar-brand" href="index.html">
-                        <img src="../assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
-                        <img src="../assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
+                        <img src="../assets/img/logo.png" class="img-fluid logo-desktop" alt="logo"/>
+                        <img src="../assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo"/>
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <i class="ti ti-align-left"></i>
                 </button>
                 <!-- end navbar-header -->
@@ -61,7 +62,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  " href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu
+                                <a class="nav-link  " href="javascript:void(0)" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu mega-menu animated fadeIn" aria-labelledby="navbarDropdown">
@@ -136,15 +138,20 @@
                                             <div>
                                                 <form>
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="Password1" placeholder="Enter Name">
+                                                        <input type="text" class="form-control" id="Password1"
+                                                               placeholder="Enter Name">
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control" id="Email1" placeholder="Enter Email">
+                                                        <input type="email" class="form-control" id="Email1"
+                                                               placeholder="Enter Email">
                                                     </div>
                                                     <div class="form-group">
-                                                        <textarea class="form-control" placeholder="Message" id="Textarea1" rows="3"></textarea>
+                                                        <textarea class="form-control" placeholder="Message"
+                                                                  id="Textarea1" rows="3"></textarea>
                                                     </div>
-                                                    <button type="submit" class="btn btn-primary text-uppercase">Submit</button>
+                                                    <button type="submit" class="btn btn-primary text-uppercase">
+                                                        Submit
+                                                    </button>
                                                 </form>
                                             </div>
                                         </div>
@@ -164,7 +171,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="javascript:void(0)" class="nav-link " id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop Down
+                                <a href="javascript:void(0)" class="nav-link " id="navbarDropdown1" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop Down
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
@@ -181,7 +189,8 @@
                         </ul>
                         <ul class="navbar-nav nav-right ml-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti ti-email"></i>
                                 </a>
                                 <div class="dropdown-menu extended animated fadeIn" aria-labelledby="navbarDropdown">
@@ -197,7 +206,8 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="../assets/img/avtar/03.jpg" alt="user3">
+                                                                <img class="img-fluid" src="../assets/img/avtar/03.jpg"
+                                                                     alt="user3">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Brianing Leyon</p>
@@ -210,7 +220,8 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="../assets/img/avtar/01.jpg" alt="user">
+                                                                <img class="img-fluid" src="../assets/img/avtar/01.jpg"
+                                                                     alt="user">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Jimmyimg Leyon</p>
@@ -223,7 +234,8 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="../assets/img/avtar/02.jpg" alt="user2">
+                                                                <img class="img-fluid" src="../assets/img/avtar/02.jpg"
+                                                                     alt="user2">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Brainjon Leyon</p>
@@ -236,7 +248,8 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="../assets/img/avtar/04.jpg" alt="user4">
+                                                                <img class="img-fluid" src="../assets/img/avtar/04.jpg"
+                                                                     alt="user4">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Smithmin Leyon</p>
@@ -249,7 +262,8 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="../assets/img/avtar/05.jpg" alt="user5">
+                                                                <img class="img-fluid" src="../assets/img/avtar/05.jpg"
+                                                                     alt="user5">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Jennyns Leyon</p>
@@ -262,7 +276,8 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="../assets/img/avtar/06.jpg" alt="user6">
+                                                                <img class="img-fluid" src="../assets/img/avtar/06.jpg"
+                                                                     alt="user6">
                                                             </div>
                                                             <div class="notify-message">
                                                                 <p class="font-weight-bold">Demian Leyon</p>
@@ -280,7 +295,8 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown3"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fe fe-bell"></i>
                                     <span class="notify">
                                                     <span class="blink"></span>
@@ -391,14 +407,17 @@
                                         <form>
                                             <div class="form-group">
                                                 <i class="ti ti-search magnifier"></i>
-                                                <input type="text" class="form-control autocomplete" placeholder="Search Here" id="autocomplete-ajax" autofocus="autofocus">
+                                                <input type="text" class="form-control autocomplete"
+                                                       placeholder="Search Here" id="autocomplete-ajax"
+                                                       autofocus="autofocus">
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown user-profile">
-                                <a href="javascript:void(0)" class="nav-link dropdown-toggle " id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a href="javascript:void(0)" class="nav-link dropdown-toggle " id="navbarDropdown4"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../assets/img/avtar/02.jpg" alt="avtar-img">
                                     <span class="bg-success user-status"></span>
                                 </a>
@@ -409,7 +428,8 @@
                                                 <h4 class="text-white mb-0">Alice Williams</h4>
                                                 <small class="text-white">Henry@example.com</small>
                                             </div>
-                                            <a href="#" class="text-white font-20 tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout"> <i
+                                            <a href="#" class="text-white font-20 tooltip-wrapper" data-toggle="tooltip"
+                                               data-placement="top" title="" data-original-title="Logout"> <i
                                                     class="zmdi zmdi-power"></i></a>
                                         </div>
                                     </div>
@@ -465,181 +485,197 @@
                                 <span class="nav-label label label-danger">9</span>
                             </a>
                             <ul aria-expanded="false">
-                                <li> <a href='index.html'>Default</a> </li>
-                                <li> <a href='index-ecommerce.html'>Ecommerce</a> </li>
-                                <li> <a href='index-car-dealer.html'>Car Dealer</a> </li>
-                                <li> <a href='index-stock-market.html'>Stock Market</a> </li>
-                                <li> <a href='index-dating.html'>Dating</a> </li>
-                                <li> <a href='index-job-portal.html'>Job Portal</a> </li>
-                                <li> <a href='index-crm.html'>CRM</a> </li>
-                                <li> <a href='index-real-estate.html'>Real Estate</a> </li>
-                                <li> <a href='index-crypto-currency.html'>Crypto Currency</a> </li>
+                                <li><a href='index.html'>Default</a></li>
+                                <li><a href='index-ecommerce.html'>Ecommerce</a></li>
+                                <li><a href='index-car-dealer.html'>Car Dealer</a></li>
+                                <li><a href='index-stock-market.html'>Stock Market</a></li>
+                                <li><a href='index-dating.html'>Dating</a></li>
+                                <li><a href='index-job-portal.html'>Job Portal</a></li>
+                                <li><a href='index-crm.html'>CRM</a></li>
+                                <li><a href='index-real-estate.html'>Real Estate</a></li>
+                                <li><a href='index-crypto-currency.html'>Crypto Currency</a></li>
                             </ul>
                         </li>
-                        <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span class="nav-title">Chat</span></a> </li>
-                        <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-calendar"></i><span class="nav-title">Calendar</span></a>
+                        <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span
+                                    class="nav-title">Chat</span></a></li>
+                        <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-calendar"></i><span class="nav-title">Calendar</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href='calendar-full.html'>Full Calendar</a> </li>
-                                <li> <a href='calendar-list.html'>Calendar List</a> </li>
+                                <li><a href='calendar-full.html'>Full Calendar</a></li>
+                                <li><a href='calendar-list.html'>Calendar List</a></li>
                             </ul>
                         </li>
-                        <li><a href="mail-inbox.html" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span class="nav-title">Mail</span></a> </li>
+                        <li><a href="mail-inbox.html" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
+                                    class="nav-title">Mail</span></a></li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-bag"></i> <span class="nav-title">UI Kit</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-bag"></i> <span class="nav-title">UI Kit</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="ui-alerts.html">Alerts</a> </li>
-                                <li> <a href="ui-accordions.html">Accordions</a> </li>
-                                <li> <a class="has-arrow" href="javascript: void(0);">Buttons</a>
+                                <li><a href="ui-alerts.html">Alerts</a></li>
+                                <li><a href="ui-accordions.html">Accordions</a></li>
+                                <li><a class="has-arrow" href="javascript: void(0);">Buttons</a>
                                     <ul aria-expanded="false">
-                                        <li> <a href="ui-button.html">Default Buttons</a> </li>
-                                        <li> <a href="ui-button-icon.html">Icon Buttons</a> </li>
-                                        <li> <a href="ui-button-block.html">Block Buttons</a> </li>
-                                        <li> <a href="ui-button-social.html">Social Buttons</a> </li>
-                                        <li> <a href="ui-button-groups.html">Group Buttons</a> </li>
+                                        <li><a href="ui-button.html">Default Buttons</a></li>
+                                        <li><a href="ui-button-icon.html">Icon Buttons</a></li>
+                                        <li><a href="ui-button-block.html">Block Buttons</a></li>
+                                        <li><a href="ui-button-social.html">Social Buttons</a></li>
+                                        <li><a href="ui-button-groups.html">Group Buttons</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="ui-badges.html">Badges</a> </li>
-                                <li> <a href="ui-cards.html">Cards</a> </li>
-                                <li> <a href="ui-carousel.html">Carousel</a> </li>
-                                <li> <a href="ui-dropdowns.html">Dropdowns</a> </li>
+                                <li><a href="ui-badges.html">Badges</a></li>
+                                <li><a href="ui-cards.html">Cards</a></li>
+                                <li><a href="ui-carousel.html">Carousel</a></li>
+                                <li><a href="ui-dropdowns.html">Dropdowns</a></li>
 
-                                <li> <a href="ui-grid.html">Grid</a> </li>
-                                <li> <a href="ui-list-group.html">List Group</a> </li>
-                                <li> <a href="ui-lightbox.html">Light Box</a> </li>
-                                <li> <a href="ui-modals.html">Modals</a> </li>
-                                <li> <a href="ui-media.html">Media</a> </li>
-                                <li> <a href="ui-nestable-list.html">Nestable List</a> </li>
-                                <li> <a href="ui-pagination.html">Pagination</a> </li>
-                                <li> <a href="ui-progressbars.html">Progress Bars</a> </li>
+                                <li><a href="ui-grid.html">Grid</a></li>
+                                <li><a href="ui-list-group.html">List Group</a></li>
+                                <li><a href="ui-lightbox.html">Light Box</a></li>
+                                <li><a href="ui-modals.html">Modals</a></li>
+                                <li><a href="ui-media.html">Media</a></li>
+                                <li><a href="ui-nestable-list.html">Nestable List</a></li>
+                                <li><a href="ui-pagination.html">Pagination</a></li>
+                                <li><a href="ui-progressbars.html">Progress Bars</a></li>
 
-                                <li> <a href="ui-sweet-alert.html">Sweet Alert</a> </li>
-                                <li> <a href="ui-tabs.html">Tabs</a> </li>
-                                <li> <a href="ui-nav.html">Nav</a> </li>
-                                <li> <a href="ui-tooltips-popovers.html">Tooltips & Popovers</a> </li>
-                                <li> <a href="ui-typography.html">Typography</a> </li>
-                                <li> <a href="ui-toastr.html">Toastr</a> </li>
-                                <li> <a href="ui-video.html">Video</a> </li>
+                                <li><a href="ui-sweet-alert.html">Sweet Alert</a></li>
+                                <li><a href="ui-tabs.html">Tabs</a></li>
+                                <li><a href="ui-nav.html">Nav</a></li>
+                                <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
+                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-toastr.html">Toastr</a></li>
+                                <li><a href="ui-video.html">Video</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-info"></i><span class="nav-title">Icons</span> </a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-info"></i><span class="nav-title">Icons</span> </a>
                             <ul aria-expanded="false">
-                                <li> <a href="icons-cryptocurrency.html">Cryptocurrency Icons</a> </li>
-                                <li> <a href="icons-drip.html">Drip Icons</a> </li>
-                                <li> <a href="icons-dash.html">Dash Icons</a> </li>
-                                <li> <a href="icons-feather.html">Feather Icons</a> </li>
-                                <li> <a href="icons-fontawesome.html">Font Awesome</a> </li>
-                                <li> <a href="icons-ion.html">Ion Icons</a> </li>
-                                <li> <a href="icons-weather.html">Weather Icons</a> </li>
-                                <li> <a href="icons-material.html">Material Icons</a> </li>
-                                <li> <a href="icons-themify.html">Themify Icons</a> </li>
+                                <li><a href="icons-cryptocurrency.html">Cryptocurrency Icons</a></li>
+                                <li><a href="icons-drip.html">Drip Icons</a></li>
+                                <li><a href="icons-dash.html">Dash Icons</a></li>
+                                <li><a href="icons-feather.html">Feather Icons</a></li>
+                                <li><a href="icons-fontawesome.html">Font Awesome</a></li>
+                                <li><a href="icons-ion.html">Ion Icons</a></li>
+                                <li><a href="icons-weather.html">Weather Icons</a></li>
+                                <li><a href="icons-material.html">Material Icons</a></li>
+                                <li><a href="icons-themify.html">Themify Icons</a></li>
                             </ul>
                         </li>
                         <li class="nav-static-title">Widgets, Tables & Layouts</li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i class="nav-icon ti ti-layout-grid4-alt"></i> <span class="nav-title">Widgets</span> <span class="nav-label label label-success">New</span> </a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i
+                                    class="nav-icon ti ti-layout-grid4-alt"></i> <span class="nav-title">Widgets</span>
+                                <span class="nav-label label label-success">New</span> </a>
                             <ul aria-expanded="false">
-                                <li> <a href="widget-chart.html">Chart Widget</a> </li>
+                                <li><a href="widget-chart.html">Chart Widget</a></li>
 
-                                <li> <a href="widget-list.html">List Widget</a> </li>
+                                <li><a href="widget-list.html">List Widget</a></li>
 
-                                <li> <a href="widget-social.html">Social Widget</a> </li>
+                                <li><a href="widget-social.html">Social Widget</a></li>
 
                             </ul>
                         </li>
                         <li class="active">
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Tables</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Tables</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="tables-basic.html">Basic Table</a> </li>
-                                <li> <a href="tables-color.html">Color Table </a> </li>
-                                <li> <a href="tables-datatable.html">Data Table</a> </li>
-                                <li class="active"> <a href="tables-editable.html">Editable Table</a> </li>
-                                <li> <a href="tables-export.html">Export Table</a> </li>
+                                <li><a href="tables-basic.html">Basic Table</a></li>
+                                <li><a href="tables-color.html">Color Table </a></li>
+                                <li><a href="tables-datatable.html">Data Table</a></li>
+                                <li class="active"><a href="tables-editable.html">Editable Table</a></li>
+                                <li><a href="tables-export.html">Export Table</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layout"></i> <span class="nav-title">Layouts</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-layout"></i> <span class="nav-title">Layouts</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="layout-mini.html">Sidebar Mini</a></li>
 
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-pie-chart"></i><span class="nav-title">Charts</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-pie-chart"></i><span class="nav-title">Charts</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="chart-apex.html">Apex Chart</a> </li>
-                                <li> <a href="chart-flot.html">Flot Chart</a> </li>
-                                <li> <a href="chart-morris.html">Morris Chart</a> </li>
-                                <li> <a href="chart-chartist.html">Chartist Charts</a> </li>
-                                <li> <a href="chart-chartjs.html">Chartjs Chart</a> </li>
-                                <li> <a href="chart-c3.html">C3 Chart</a> </li>
-                                <li> <a href="chart-sparkline.html">Sparkline Chart</a> </li>
-                                <li> <a href="chart-knob.html">Knob Chart</a> </li>
+                                <li><a href="chart-apex.html">Apex Chart</a></li>
+                                <li><a href="chart-flot.html">Flot Chart</a></li>
+                                <li><a href="chart-morris.html">Morris Chart</a></li>
+                                <li><a href="chart-chartist.html">Chartist Charts</a></li>
+                                <li><a href="chart-chartjs.html">Chartjs Chart</a></li>
+                                <li><a href="chart-c3.html">C3 Chart</a></li>
+                                <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
+                                <li><a href="chart-knob.html">Knob Chart</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i class="nav-icon ti ti-pencil-alt"></i> <span class="nav-title">Forms</span> </a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i
+                                    class="nav-icon ti ti-pencil-alt"></i> <span class="nav-title">Forms</span> </a>
                             <ul aria-expanded="false">
-                                <li> <a href="form-autonumeric.html">Autonumeric</a> </li>
-                                <li> <a href="form-editors.html">Editors</a> </li>
-                                <li> <a href="form-elements.html">Elements</a> </li>
-                                <li> <a href="form-file-upload.html">Drop Zone
-                                    </a> </li>
-                                <li> <a href="form-input-groups.html">Input Groups</a> </li>
-                                <li> <a href="form-inputmask.html">Input Masks</a> </li>
-                                <li> <a href="form-layouts.html">Forms Layouts</a> </li>
-                                <li> <a href="form-listbox.html">Listbox</a> </li>
-                                <li> <a href="form-pickers.html">Pickers</a> </li>
-                                <li> <a href="form-range-slider.html">Range Slider</a> </li>
-                                <li> <a href="form-crops.html">Selects</a> </li>
-                                <li> <a href="form-switchers.html">Switchers</a> </li>
-                                <li> <a href="form-soil.html">Validation</a> </li>
+                                <li><a href="form-autonumeric.html">Autonumeric</a></li>
+                                <li><a href="form-editors.html">Editors</a></li>
+                                <li><a href="form-elements.html">Elements</a></li>
+                                <li><a href="form-file-upload.html">Drop Zone
+                                    </a></li>
+                                <li><a href="form-input-groups.html">Input Groups</a></li>
+                                <li><a href="form-inputmask.html">Input Masks</a></li>
+                                <li><a href="form-layouts.html">Forms Layouts</a></li>
+                                <li><a href="form-listbox.html">Listbox</a></li>
+                                <li><a href="form-pickers.html">Pickers</a></li>
+                                <li><a href="form-range-slider.html">Range Slider</a></li>
+                                <li><a href="form-crops.html">Selects</a></li>
+                                <li><a href="form-switchers.html">Switchers</a></li>
+                                <li><a href="form-soil.html">Validation</a></li>
                             </ul>
                         </li>
                         <li class="nav-static-title">Extra Components</li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-map-alt"></i><span class="nav-title">Maps</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-map-alt"></i><span class="nav-title">Maps</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="maps-google.html">Google Maps</a> </li>
-                                <li> <a href="maps-vector.html">Vector Maps</a> </li>
-                                <li> <a href="maps-mapael.html">Mapael Maps</a> </li>
+                                <li><a href="maps-google.html">Google Maps</a></li>
+                                <li><a href="maps-vector.html">Vector Maps</a></li>
+                                <li><a href="maps-mapael.html">Mapael Maps</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span class="nav-title">Pages</span><span class="nav-label label label-primary">12</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-layers"></i><span class="nav-title">Pages</span><span
+                                    class="nav-label label label-primary">12</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="page-account-settings.html">Account Settings</a> </li>
-                                <li> <a href="page-clients.html">Clients</a> </li>
-                                <li> <a href="page-contacts.html">Contacts</a> </li>
-                                <li> <a href="page-employees.html">Employees</a> </li>
-                                <li> <a href="page-faq.html">FAQ</a> </li>
-                                <li> <a href="page-file-manager.html">File Manager</a> </li>
-                                <li> <a href="page-gallery.html">Gallery</a> </li>
+                                <li><a href="page-account-settings.html">Account Settings</a></li>
+                                <li><a href="page-clients.html">Clients</a></li>
+                                <li><a href="page-contacts.html">Contacts</a></li>
+                                <li><a href="page-employees.html">Employees</a></li>
+                                <li><a href="page-faq.html">FAQ</a></li>
+                                <li><a href="page-file-manager.html">File Manager</a></li>
+                                <li><a href="page-gallery.html">Gallery</a></li>
 
-                                <li> <a href="page-pricing.html">Pricing</a> </li>
-                                <li> <a href="page-task-list.html">Task List</a> </li>
-                                <li> <a href="page-404.html">404</a> </li>
-                                <li> <a href="page-500.html">500</a> </li>
-                                <li> <a href="page-coming-soon.html">Coming Soon</a> </li>
+                                <li><a href="page-pricing.html">Pricing</a></li>
+                                <li><a href="page-task-list.html">Task List</a></li>
+                                <li><a href="page-404.html">404</a></li>
+                                <li><a href="page-500.html">500</a></li>
+                                <li><a href="page-coming-soon.html">Coming Soon</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-key"></i><span class="nav-title">Auth</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-key"></i><span class="nav-title">Auth</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="auth-login.html">Login</a> </li>
-                                <li> <a href="auth-register.html">Register</a> </li>
-                                <li> <a href="auth-lockscreen.html">Lock Screen</a> </li>
+                                <li><a href="auth-login.html">Login</a></li>
+                                <li><a href="auth-register.html">Register</a></li>
+                                <li><a href="auth-lockscreen.html">Lock Screen</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-list"></i><span class="nav-title">Multi Level</span></a>
+                            <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-list"></i><span class="nav-title">Multi Level</span></a>
                             <ul aria-expanded="false">
-                                <li> <a href="javascript: void(0);">Level 1.1</a> </li>
+                                <li><a href="javascript: void(0);">Level 1.1</a></li>
                                 <li class="scoop-hasmenu">
                                     <a class="has-arrow" href="javascript: void(0);">Level 1.2</a>
                                     <ul aria-expanded="false">
-                                        <li> <a href="javascript: void(0);">Level 2.1</a> </li>
-                                        <li> <a href="javascript: void(0);">Level 2.2</a> </li>
+                                        <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                        <li><a href="javascript: void(0);">Level 2.2</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -647,7 +683,8 @@
                         <li class="sidebar-banner p-4 bg-gradient text-center m-3 d-block rounded">
                             <h5 class="text-white mb-1">Mentor admin</h5>
                             <p class="font-13 text-white line-20">Multipurpose Bootstrap 4 Admin Template</p>
-                            <a class="btn btn-square btn-inverse-light btn-xs d-inline-block mt-2 mb-0" href="#"> Buy now</a>
+                            <a class="btn btn-square btn-inverse-light btn-xs d-inline-block mt-2 mb-0" href="#"> Buy
+                                now</a>
                         </li>
                     </ul>
                 </div>
@@ -690,7 +727,8 @@
                             <div class="card card-statistics">
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table id="table" class="table display responsive nowrap table-light table-bordered">
+                                        <table id="table"
+                                               class="table display responsive nowrap table-light table-bordered">
                                             <tr>
                                                 <th>Farmers-name</th>
                                                 <th>Farmers-ID</th>
@@ -701,16 +739,49 @@
                                                 <th>Payment-No</th>
 
                                             </tr>
+                                            <tr>
 
-                                                <tr>
+
+                                                <td>{{$soil_info->NAME}}</td>
+                                                <td>{{$soil_info->FARMER_ID}}
+                                                <td>{{$soil_info->PHONE_NO}}</td>
+                                                <td>{{$soil_info->ADDRESS}}</td>
+                                                <td>{{$soil_info->test_name}}</td>
+                                                <td>{{$soil_info->SOIL_ID}}</td>
+                                                <td>{{$soil_info->Payment_number}}</td>
 
 
-                                                </tr>
+                                            </tr>
 
-                                                </thead>
-                                                </tbody>
+                                            </thead>
+                                            </tbody>
 
                                         </table>
+
+                                        <div class="row">
+                                            <div class="row-cols-3">
+                                            <label for="cars">Choose a Supplier:</label>
+
+                                            <select name="cars" class="form-control-md">
+                                                @if(!empty('supplier_info'))
+
+                                                    @foreach($supplier_info as $supply)
+                                                        <option name="{{$supply->name}}">{{$supply->name}}</option>
+                                                    @endforeach
+
+
+                                                @endif
+
+
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary" name="assign" value="assign">
+                                                assign
+                                            </button>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

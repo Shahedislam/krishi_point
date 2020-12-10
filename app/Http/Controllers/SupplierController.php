@@ -42,8 +42,10 @@ class SupplierController extends Controller
     public function assign_supplier($id)
     {
 
-        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where ('programs.id',$id)->first();
-        return view('local-operator.supplier_view');
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where ('payments.id',$id)->first();
+             $supplier_info=supplier::all();
+
+        return view('local-operator.supplier_view',compact('soil_info','supplier_info'));;
     }
 
 }
