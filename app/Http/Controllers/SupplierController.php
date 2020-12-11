@@ -5,6 +5,7 @@ use App\supplier;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
@@ -46,6 +47,13 @@ class SupplierController extends Controller
              $supplier_info=supplier::all();
 
         return view('local-operator.supplier_view',compact('soil_info','supplier_info'));;
+    }
+
+    public function farmer_sample()
+    {
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->join("assign_suppliers","assign_suppliers.farmer_id","payments.farmer_id")->join("suppliers","suppliers.user_id","assign_suppliers.supplier_name")->where('assign_suppliers.supplier_name',Auth::id())->get();
+       dd($soil_info);
+        return view('supplier.farmer_sample');
     }
 
 }

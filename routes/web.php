@@ -64,4 +64,9 @@ Route::get('/supplier', 'invoice@supplier_show');
 Route::get('/assign/{id}', 'SupplierController@assign_supplier');
 
 
+Route::get('/supplierassign', 'AssignSupplierController@supplier_view')->name('assign.store');
+
+Route::get('/sampleview', 'SupplierController@farmer_sample');
+
+
 
