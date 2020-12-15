@@ -70,3 +70,4 @@ Route::get('/sampleview', 'SupplierController@farmer_sample');
 
 
 
+Route::get('/dash', 'SupplierController@dashboard');

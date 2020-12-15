@@ -1,3 +1,4 @@
+@extends('supplier.dashboard')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -739,6 +740,15 @@
                                                     <th>Soil-ID</th>
                                                     <th>Payment-No</th>
 
+                                                </tr>
+                                                <tr>
+                                                    <td>{{$soil_info->NAME}}</td>
+                                                    <td>{{$soil_info->FARMER_ID}}
+                                                    <td>{{$soil_info->PHONE_NO}}</td>
+                                                    <td>{{$soil_info->ADDRESS}}</td>
+                                                    <td>{{$soil_info->test_name}}</td>
+                                                    <td>{{$soil_info->SOIL_ID}}</td>
+                                                    <td>{{$soil_info->Payment_number}}</td>
                                                 </tr>
                                                 <tr>
 

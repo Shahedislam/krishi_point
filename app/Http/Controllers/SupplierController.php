@@ -51,9 +51,17 @@ class SupplierController extends Controller
 
     public function farmer_sample()
     {
-        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->join("assign_suppliers","assign_suppliers.farmer_id","payments.farmer_id")->join("suppliers","suppliers.user_id","assign_suppliers.supplier_name")->where('assign_suppliers.supplier_name',Auth::id())->get();
-       dd($soil_info);
-        return view('supplier.farmer_sample');
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->join("assign_suppliers","assign_suppliers.farmer_id","payments.id")->join("suppliers","suppliers.user_id","assign_suppliers.supplier_name")->where('assign_suppliers.supplier_name',Auth::id())->orderBy('assign_suppliers.id','desc')->first();
+
+        return view('supplier.farmer_sample',compact('soil_info'));
     }
+
+    public function dashboard()
+    {
+        return view('supplier.dashboard');
+    }
+
+
+
 
 }
