@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\crops_sample;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CropsSampleController extends Controller
 {
@@ -20,12 +21,16 @@ class CropsSampleController extends Controller
         $crops->SUBMISSION_DATE= $request->sample;
         $crops->DELIVERY_DATE= $request->delivery;
         $crops->save();
-        return redirect('/crops');
+        $crops_id=$crops->id;
+        return view('local-operator.crops_payment',compact('crops_id'));
 
     }
 
     public function crops_view()
+
     {
-        return view('local-operator.crops_info');
+
+        return view("local-operator.crops_info");
+
     }
 }

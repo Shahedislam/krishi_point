@@ -18,6 +18,11 @@ class PaymentController extends Controller
             //$payment->total_price=$request->total_price;
         return view('local-operator.payment');
     }
+
+    public function crops()
+    {
+        return view('local-operator.crops_payment');
+    }
     public function payment_process(Request $request)
     {
         if($request->soil_id!=null){
@@ -39,7 +44,27 @@ class PaymentController extends Controller
         }
 
     }
+    public function payment_crops(Request $request)
+    {
+        if($request->crops_id!=null){
+            $payment=new payment();
+            $payment->Payment_number=$request->Payment_Number;
+            $payment->test_name=$request->test_name;
+            $payment->price=$request->price;
+            $payment->test_count=$request->test_count;
+            $payment->total_price=$request->total_price;
+            $payment->farmer_id=$request->crops_id;
 
+            $payment->save();
+            $request->session()->put('crops_id',$request->crops_id);
+            return redirect('/crvoice');
+
+        }
+        else{
+            return redirect('local-operator.crops_sample');
+        }
+
+    }
 
 
 }

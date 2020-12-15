@@ -54,6 +54,11 @@ Route::get('/soilview', 'ProgramController@soil_view');
 
 Route::get('/invoice', 'invoice@invoice');
 
+Route::get('/crvoice', 'invoice@crops_invoice');
+
+Route::get('/crops_payment', 'PaymentController@crops');
+Route::post('/crinvoice', 'PaymentController@payment_crops')->name('crops_payment.store');
+
 //supplier
 Route::get('/info', 'SupplierController@supplier_info');
 Route::post('/infostore', 'SupplierController@reg')->name('info.store');

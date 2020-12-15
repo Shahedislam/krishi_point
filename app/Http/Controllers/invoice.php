@@ -18,6 +18,16 @@ class invoice extends Controller
         return view('local-operator.invoice',compact('soil_info'));
     }
 
+    public function crops_invoice(Request $request)
+    {
+        $value = $request->session()->get('crops_id');
+        $crops_info=DB::table("crops_samples")->join("payments","crops_samples.id","payments.farmer_id")->where('crops_samples.id',$value)->first();
+
+
+
+        return view('local-operator.crops_invoice',compact('crops_info'));
+    }
+
 
     public function supplier_show()
     {
