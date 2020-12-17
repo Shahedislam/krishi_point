@@ -1,24 +1,23 @@
-@extends('local-operator.style')
-
-<!DOCTYPE html>
+@extends('supplier.dashboard')
+    <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
-    <title>Mentor - Bootstrap 4 Admin Dashboard Template</title>
     <meta charset="utf-8"/>
+    <title>Mentor - Bootstrap 4 Admin Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="Admin template that can be used to build dashboards for CRM, CMS, etc."/>
-    <meta name="author" content="Potenza Global Solutions"/>
+    <meta content="Admin template that can be used to build dashboards for CRM, CMS, etc." name="description"/>
+    <meta content="Potenz Global Solutions" name="author"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <!-- app favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <!-- plugin stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css"/>
+    <!-- plugin stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors.css"/>
     <!-- app style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -30,7 +29,7 @@
         <div class="loader">
             <div class="h-100 d-flex justify-content-center">
                 <div class="align-self-center">
-                    <img src="assets/img/loader/loader.svg" alt="loader">
+                    <img src="../assets/img/loader/loader.svg" alt="loader">
                 </div>
             </div>
         </div>
@@ -44,8 +43,8 @@
                 <div class="navbar-header d-flex align-items-center">
                     <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo"/>
-                        <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo"/>
+                        <img src="../assets/img/logo.png" class="img-fluid logo-desktop" alt="logo"/>
+                        <img src="../assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo"/>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -208,7 +207,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/03.jpg"
+                                                                <img class="img-fluid" src="../assets/img/avtar/03.jpg"
                                                                      alt="user3">
                                                             </div>
                                                             <div class="notify-message">
@@ -222,7 +221,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/01.jpg"
+                                                                <img class="img-fluid" src="../assets/img/avtar/01.jpg"
                                                                      alt="user">
                                                             </div>
                                                             <div class="notify-message">
@@ -236,7 +235,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/02.jpg"
+                                                                <img class="img-fluid" src="../assets/img/avtar/02.jpg"
                                                                      alt="user2">
                                                             </div>
                                                             <div class="notify-message">
@@ -250,7 +249,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/04.jpg"
+                                                                <img class="img-fluid" src="../assets/img/avtar/04.jpg"
                                                                      alt="user4">
                                                             </div>
                                                             <div class="notify-message">
@@ -264,7 +263,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/05.jpg"
+                                                                <img class="img-fluid" src="../assets/img/avtar/05.jpg"
                                                                      alt="user5">
                                                             </div>
                                                             <div class="notify-message">
@@ -278,7 +277,7 @@
                                                     <a href="javascript:void(0)">
                                                         <div class="notification d-flex flex-row align-items-center">
                                                             <div class="notify-icon bg-img align-self-center">
-                                                                <img class="img-fluid" src="assets/img/avtar/06.jpg"
+                                                                <img class="img-fluid" src="../assets/img/avtar/06.jpg"
                                                                      alt="user6">
                                                             </div>
                                                             <div class="notify-message">
@@ -420,7 +419,7 @@
                             <li class="nav-item dropdown user-profile">
                                 <a href="javascript:void(0)" class="nav-link dropdown-toggle " id="navbarDropdown4"
                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="assets/img/avtar/02.jpg" alt="avtar-img">
+                                    <img src="../assets/img/avtar/02.jpg" alt="avtar-img">
                                     <span class="bg-success user-status"></span>
                                 </a>
                                 <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
@@ -501,8 +500,7 @@
                         <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span
                                     class="nav-title">Chat</span></a></li>
                         <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-calendar"></i><span
-                                    class="nav-title">Calendar</span></a>
+                                    class="nav-icon ti ti-calendar"></i><span class="nav-title">Calendar</span></a>
                             <ul aria-expanded="false">
                                 <li><a href='calendar-full.html'>Full Calendar</a></li>
                                 <li><a href='calendar-list.html'>Calendar List</a></li>
@@ -512,8 +510,7 @@
                                     class="nav-title">Mail</span></a></li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-bag"></i>
-                                <span class="nav-title">UI Kit</span></a>
+                                    class="nav-icon ti ti-bag"></i> <span class="nav-title">UI Kit</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="ui-alerts.html">Alerts</a></li>
                                 <li><a href="ui-accordions.html">Accordions</a></li>
@@ -551,8 +548,7 @@
                         </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-info"></i><span
-                                    class="nav-title">Icons</span> </a>
+                                    class="nav-icon ti ti-info"></i><span class="nav-title">Icons</span> </a>
                             <ul aria-expanded="false">
                                 <li><a href="icons-cryptocurrency.html">Cryptocurrency Icons</a></li>
                                 <li><a href="icons-drip.html">Drip Icons</a></li>
@@ -568,10 +564,8 @@
                         <li class="nav-static-title">Widgets, Tables & Layouts</li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i
-                                    class="nav-icon ti ti-layout-grid4-alt"></i>
-                                <span class="nav-title">Widgets</span> <span
-                                    class="nav-label label label-success">New</span>
-                            </a>
+                                    class="nav-icon ti ti-layout-grid4-alt"></i> <span class="nav-title">Widgets</span>
+                                <span class="nav-label label label-success">New</span> </a>
                             <ul aria-expanded="false">
                                 <li><a href="widget-chart.html">Chart Widget</a></li>
 
@@ -581,22 +575,20 @@
 
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-layout-column3-alt"></i><span
-                                    class="nav-title">Tables</span></a>
+                                    class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Tables</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="tables-basic.html">Basic Table</a></li>
                                 <li><a href="tables-color.html">Color Table </a></li>
                                 <li><a href="tables-datatable.html">Data Table</a></li>
-                                <li><a href="tables-editable.html">Editable Table</a></li>
+                                <li class="active"><a href="tables-editable.html">Editable Table</a></li>
                                 <li><a href="tables-export.html">Export Table</a></li>
                             </ul>
                         </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-layout"></i>
-                                <span class="nav-title">Layouts</span></a>
+                                    class="nav-icon ti ti-layout"></i> <span class="nav-title">Layouts</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="layout-mini.html">Sidebar Mini</a></li>
 
@@ -604,8 +596,7 @@
                         </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-pie-chart"></i><span
-                                    class="nav-title">Charts</span></a>
+                                    class="nav-icon ti ti-pie-chart"></i><span class="nav-title">Charts</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="chart-apex.html">Apex Chart</a></li>
                                 <li><a href="chart-flot.html">Flot Chart</a></li>
@@ -619,8 +610,7 @@
                         </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i
-                                    class="nav-icon ti ti-pencil-alt"></i>
-                                <span class="nav-title">Forms</span> </a>
+                                    class="nav-icon ti ti-pencil-alt"></i> <span class="nav-title">Forms</span> </a>
                             <ul aria-expanded="false">
                                 <li><a href="form-autonumeric.html">Autonumeric</a></li>
                                 <li><a href="form-editors.html">Editors</a></li>
@@ -641,24 +631,23 @@
                         <li class="nav-static-title">Extra Components</li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-map-alt"></i><span
-                                    class="nav-title">Maps</span></a>
+                                    class="nav-icon ti ti-map-alt"></i><span class="nav-title">Maps</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="maps-google.html">Google Maps</a></li>
                                 <li><a href="maps-vector.html">Vector Maps</a></li>
                                 <li><a href="maps-mapael.html">Mapael Maps</a></li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-layers"></i><span
-                                    class="nav-title">Pages</span><span class="nav-label label label-primary">12</span></a>
+                                    class="nav-icon ti ti-layers"></i><span class="nav-title">Pages</span><span
+                                    class="nav-label label label-primary">12</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="page-account-settings.html">Account Settings</a></li>
                                 <li><a href="page-clients.html">Clients</a></li>
                                 <li><a href="page-contacts.html">Contacts</a></li>
                                 <li><a href="page-employees.html">Employees</a></li>
-                                <li class="active"><a href="page-faq.html">FAQ</a></li>
+                                <li><a href="page-faq.html">FAQ</a></li>
                                 <li><a href="page-file-manager.html">File Manager</a></li>
                                 <li><a href="page-gallery.html">Gallery</a></li>
 
@@ -671,8 +660,7 @@
                         </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-key"></i><span
-                                    class="nav-title">Auth</span></a>
+                                    class="nav-icon ti ti-key"></i><span class="nav-title">Auth</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="auth-login.html">Login</a></li>
                                 <li><a href="auth-register.html">Register</a></li>
@@ -681,8 +669,7 @@
                         </li>
                         <li>
                             <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
-                                    class="nav-icon ti ti-list"></i><span
-                                    class="nav-title">Multi Level</span></a>
+                                    class="nav-icon ti ti-list"></i><span class="nav-title">Multi Level</span></a>
                             <ul aria-expanded="false">
                                 <li><a href="javascript: void(0);">Level 1.1</a></li>
                                 <li class="scoop-hasmenu">
@@ -697,8 +684,8 @@
                         <li class="sidebar-banner p-4 bg-gradient text-center m-3 d-block rounded">
                             <h5 class="text-white mb-1">Mentor admin</h5>
                             <p class="font-13 text-white line-20">Multipurpose Bootstrap 4 Admin Template</p>
-                            <a class="btn btn-square btn-inverse-light btn-xs d-inline-block mt-2 mb-0" href="#">
-                                Buy now</a>
+                            <a class="btn btn-square btn-inverse-light btn-xs d-inline-block mt-2 mb-0" href="#"> Buy
+                                now</a>
                         </li>
                     </ul>
                 </div>
@@ -710,179 +697,128 @@
                 <!-- begin container-fluid -->
                 <div class="container-fluid">
                     <!-- begin row -->
-                    <div class="row card " id="printdata">
-
+                    <div class="row">
                         <div class="col-md-12 m-b-30">
                             <!-- begin page title -->
-                            <div class="d-block  d-sm-flex flex-nowrap align-items-center">
+                            <div class="d-block d-sm-flex flex-nowrap align-items-center">
                                 <div class="page-title mb-2 mb-sm-0">
-                                    <h1>Invoice Details</h1>
+                                    <h1>farmers crops info</h1>
                                 </div>
-
+                                <div class="ml-auto d-flex align-items-center">
+                                    <nav>
+                                        <ol class="breadcrumb p-0 m-b-0">
+                                            <li class="breadcrumb-item">
+                                                <a href="index.html"><i class="ti ti-home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item">
+                                                Tables
+                                            </li>
+                                            <li class="breadcrumb-item active text-primary" aria-current="page"></li>
+                                        </ol>
+                                    </nav>
+                                </div>
                             </div>
                             <!-- end page title -->
                         </div>
-                        <div class="col-md-12 m-b-30">
+                    </div>
+                    <!-- end row -->
+                    <!-- begin row -->
+                    <div class="row editable-wrapper">
+                        <div class="col-lg-12 ">
+                            <div class="card card-statistics">
 
-                            <table id="meta">
-                                <tr>
-                                    <td></td>
-                                    <td class="meta-head">Invoice Number</td>
-                                    <td>{{$crops_info->id}}</td>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="table"
+                                               class="table display responsive nowrap table-light table-bordered">
+                                            <tr>
+                                                <th>Farmers-name</th>
+                                                <th>Farmers-ID</th>
+                                                <th>Address</th>
+                                                <th>Phone-no</th>
+                                                <th>Test-name</th>
+                                                <th>Crops-Name</th>
+                                                <th>Soil-ID</th>
+                                                <th>Payment-No</th>
 
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="meta-head">Date</td>
-                                    <td></td>
-
-
-                                </tr>
-
-                            </table>
-                            <br>
-
-                            <div class="col-md-12 m-b-30">
-
-                                <table id="meta">
-                                    <tr>
-
-                                        <td></td>
-                                        <td class="meta-head">Farmer-NAME</td>
-                                        <td>{{$crops_info->NAME}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-
-                                        <td class="meta-head">Farmer-ID</td>
-
-                                        <td>{{$crops_info->FARMER_ID}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{$crops_info->NAME}}</td>
+                                                <td>{{$crops_info->FARMER_ID}}
+                                                <td>{{$crops_info->PHONE_NO}}</td>
+                                                <td>{{$crops_info->ADDRESS}}</td>
+                                                <td>{{$crops_info->test_name}}</td>
+                                                <td>{{$crops_info->CROPS_NAME}}</td>
+                                                <td>{{$crops_info->SOIL_ID}}</td>
+                                                <td>{{$crops_info->Payment_number}}</td>
+                                            </tr>
+                                            <tr>
 
 
+                                                {{--<td>{{$soil_info->NAME}}</td>
+                                                <td>{{$soil_info->FARMER_ID}}
+                                                <td>{{$soil_info->PHONE_NO}}</td>
+                                                <td>{{$soil_info->ADDRESS}}</td>
+                                                <td>{{$soil_info->test_name}}</td>
+                                                <td>{{$soil_info->SOIL_ID}}</td>
+                                                <td>{{$soil_info->Payment_number}}</td>
+--}}
 
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td class="meta-head">Phone-NO</td>
-                                        <td>{{$crops_info->PHONE_NO}}</td>
+                                            </tr>
+
+                                            </thead>
+                                            </tbody>
+
+                                        </table>
+
+                                        <div class="row">
+                                            <div class="row-cols-3">
 
 
-                                    </tr>
 
-                                    <tr>
-                                        <td></td>
-                                        <td class="meta-head">Address</td>
-                                        <td>{{$crops_info->ADDRESS}}</td>
+                                            </div>
+                                        </div>
+                                        <div>
 
 
-                                    </tr>
-
-                                </table>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
-                            <div>
-
-                                <table class="table" id="items">
-
-                                    <tr>
-                                        <th>Payment Number</th>
-                                        <th>Test Name</th>
-                                        <th>Crops Name</th>
-                                        <th>Cost</th>
-                                        <th>Quantity</th>
-                                        <th>Total Cost</th>
-                                    </tr>
-                                    <tr>
-
-                                        <td>{{$crops_info->Payment_number}}</td>
-                                        <td>{{$crops_info->test_name}}</td>
-                                        <td>{{$crops_info->CROPS_NAME}}</td>
-                                        <td>{{$crops_info->price}}</td>
-                                        <td>{{$crops_info->test_count}}</td>
-                                        <td>{{$crops_info->total_price}}</td>
-                                    </tr>
-
-
-                                    {{--<tr>
-                                        <td colspan="2" class="blank"></td>
-                                        <td colspan="2" class="total-line">Subtotal</td>
-                                        <td class="total-value">
-                                            <div id="subtotal"></div>
-                                        </td>
-                                    </tr>
-                                    <tr>--}}
-
-
-                                        <td colspan="2" class="blank"></td>
-                                        <td colspan="2" class="total-line">Amount Paid</td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="blank"></td>
-                                        <td colspan="2" class="total-line balance">Balance Due</td>
-                                        <td class="total-value balance">
-                                            <div class="due"></div>
-                                        </td>
-                                    </tr>
-
-                                </table>
-                            </div>
-
-                            <div class="modal-footer">
-
-                                <button type="button" class="btn btn-success" onclick="printDiv('printdata')">print</button>
-                            </div>
-
-
-                            <!-- end row -->
-                            <!--faq-contant-start-->
-
                         </div>
                     </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+            <!-- end app-main -->
+        </div>
+        <!-- end app-container -->
+        <!-- begin footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-center text-sm-left">
+                    <p>&copy; Copyright 2019. All rights reserved.</p>
+                </div>
+                <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
+                    <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
                 </div>
             </div>
-        </div>
+        </footer>
+        <!-- end footer -->
     </div>
-</div>
-</div>
-</div>
-</div>
-<!--faq-contant-end-->
-</div>
-<!-- end container-fluid -->
-</div>
-<!-- end app-main -->
-</div>
-<!-- end app-container -->
-<!-- begin footer -->
-
-<!-- end footer -->
-</div>
-<!-- end app-wrap -->
+    <!-- end app-wrap -->
 </div>
 <!-- end app -->
 
 <!-- plugins -->
-<script src="assets/js/vendors.js"></script>
+<script src="../assets/js/vendors.js"></script>
 
 <!-- custom app -->
-<script src="assets/js/app.js"></script>
-<script>
-    function printDiv(divName) {
-        var printContents = document.getElementById(divName).innerHTML;
-        var originalContents = document.body.innerHTML;
-
-        document.body.innerHTML = printContents;
-
-        window.print();
-
-        document.body.innerHTML = originalContents;
-    }
-
-</script>
+<script src="../assets/js/app.js"></script>
 </body>
 
-
 </html>
+
 

@@ -56,6 +56,8 @@ Route::get('/invoice', 'invoice@invoice');
 
 Route::get('/crvoice', 'invoice@crops_invoice');
 
+Route::get('/crops_view', 'CropsSampleController@crops_details');
+
 Route::get('/crops_payment', 'PaymentController@crops');
 Route::post('/crinvoice', 'PaymentController@payment_crops')->name('crops_payment.store');
 
@@ -73,6 +75,26 @@ Route::get('/supplierassign', 'AssignSupplierController@supplier_view')->name('a
 
 Route::get('/sampleview', 'SupplierController@farmer_sample');
 
+
+
+
+
+
+//manager
+Route::get('/man', 'ManagerController@manager_info');
+Route::post('/manstore', 'ManagerController@reg')->name('man.store');
+
+
+
+
+Route::get('/manager', 'AssignManagerController@manager_show');
+Route::get('/assign/{id}', 'ManagerController@assign_manager');
+Route::get('/samp', 'ManagerController@farmer_sample');
+
+
+Route::get('/manassign', 'AssignManagerController@manager_view')->name('assign.store');
+
+//Route::get('/sampleview', 'ManagerController@farmer_sample');
 
 
 Route::get('/dash', 'SupplierController@dashboard');

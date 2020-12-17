@@ -26,11 +26,16 @@ class CropsSampleController extends Controller
 
     }
 
-    public function crops_view()
-
+    public function crops_details()
     {
 
-        return view("local-operator.crops_info");
+        $crops_info=DB::table("crops_samples")->join("payments","crops_samples.id","payments.farmer_id")->get();
+        return view("local-operator.crops_view",compact('crops_info'));
 
+    }
+
+    public function crops_view()
+    {
+        return view('local-operator.crops_info');
     }
 }

@@ -40,6 +40,7 @@ class SupplierController extends Controller
     }
 
 
+
     public function assign_supplier($id)
     {
 
