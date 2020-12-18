@@ -29,7 +29,7 @@ class ManagerController extends Controller
         $man->email = $request->Email;
         $man->save();
 
-        return redirect('/crops_sample');
+        return redirect('/crops_view');
 
     }
     public function manager_info()
@@ -51,7 +51,7 @@ class ManagerController extends Controller
     {
         $crops_info=DB::table("crops_samples")->join("payments","crops_samples.id","payments.farmer_id")->join("assign_managers","assign_managers.farmer_id","payments.id")->join("managers","managers.user_id","assign_managers.manager_name")->where('assign_managers.manager_name',Auth::id())->orderBy('assign_managers.id','desc')->first();
 
-        return view('local-operator.sample',compact('crops_info'));
+        return view('local-operator.manager_view_sample',compact('crops_info'));
     }
 
     }

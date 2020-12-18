@@ -98,3 +98,8 @@ Route::get('/manassign', 'AssignManagerController@manager_view')->name('assign.s
 
 
 Route::get('/dash', 'SupplierController@dashboard');
+//crops-disease
+Route::get('/disease', 'CropsDiseaseController@disease_form');
+Route::post('/disinfo', 'CropsDiseaseController@disease_sample')->name('disease.store');
+
+
