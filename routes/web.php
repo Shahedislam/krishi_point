@@ -102,4 +102,9 @@ Route::get('/dash', 'SupplierController@dashboard');
 Route::get('/disease', 'CropsDiseaseController@disease_form');
 Route::post('/disinfo', 'CropsDiseaseController@disease_sample')->name('disease.store');
 
+//disease input
+Route::get('/assign/{id}', 'ManagerController@assign_disease');
+
+Route::get('/rep', 'CropsDiseaseController@dashboard');
+
 

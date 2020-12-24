@@ -53,5 +53,9 @@ class ManagerController extends Controller
 
         return view('local-operator.manager_view_sample',compact('crops_info'));
     }
+    public function assign_disease($id)
+    {
+        return view('local-operator.disease_info',compact('id'));
+    }
 
     }

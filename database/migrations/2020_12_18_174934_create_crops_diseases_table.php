@@ -16,8 +16,15 @@ class CreateCropsDiseasesTable extends Migration
         Schema::create('crops_diseases', function (Blueprint $table) {
             $table->id();
             $table->string("crops_name");
-            $table->string("disease_name");
-            $table->string("remedy");
+            $table->string("crops_syptoms_1")->nullable();
+            $table->string("crops_syptoms_2")->nullable();
+            $table->string("crops_syptoms_3")->nullable();
+            $table->string("crops_syptoms_4")->nullable();
+            $table->string("crops_syptoms_5")->nullable();
+            $table->string("remedy_1")->nullable();
+            $table->string("remedy_2")->nullable();
+            $table->string("remedy_3")->nullable();
+
             $table->timestamps();
         });
     }

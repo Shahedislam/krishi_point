@@ -739,6 +739,7 @@
                                                 <th>Test-name</th>
                                                 <th>Crops-Name</th>
                                                 <th>Payment-No</th>
+                                                <th>Action</th>
 
                                             </tr>
                                             <tr>
@@ -749,6 +750,7 @@
                                                 <td>{{$crops_info->test_name}}</td>
                                                 <td>{{$crops_info->CROPS_NAME}}</td>
                                                 <td>{{$crops_info->Payment_number}}</td>
+                                                <td><a href='assign/{{$crops_info->id}}' class="btn btn-warning">Assign</a></td>
                                             </tr>
                                             <tr>
 
