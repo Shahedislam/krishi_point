@@ -17,6 +17,8 @@ class CreateAssignSuppliersTable extends Migration
             $table->id();
             $table->string("farmer_id");
             $table->string("supplier_name");
+            $table->string("status");
+
             $table->timestamps();
         });
     }

@@ -88,11 +88,11 @@ Route::post('/manstore', 'ManagerController@reg')->name('man.store');
 
 
 Route::get('/manager', 'AssignManagerController@manager_show');
-Route::get('/assign/{id}', 'ManagerController@assign_manager');
+//Route::get('/assign/{id}', 'ManagerController@assign_manager');
 Route::get('/samp', 'ManagerController@farmer_sample');
 
 
-Route::get('/manassign', 'AssignManagerController@manager_view')->name('assign.store');
+//Route::get('/manassign', 'AssignManagerController@manager_view')->name('assign.store');
 
 //Route::get('/sampleview', 'ManagerController@farmer_sample');
 
@@ -103,8 +103,12 @@ Route::get('/disease', 'CropsDiseaseController@disease_form');
 Route::post('/disinfo', 'CropsDiseaseController@disease_sample')->name('disease.store');
 
 //disease input
-Route::get('/assign/{id}', 'ManagerController@assign_disease');
+//Route::get('/assign/{id}', 'ManagerController@assign_disease');
 
 Route::get('/rep', 'CropsDiseaseController@dashboard');
 
+Route::get('/delivery/{id}', 'AssignSupplierController@delivery_status')->name('delivery.store');
 
+//tester
+Route::get('/tester', 'TesterController@tester_info');
+Route::post('/testtore', 'TesterController@reg')->name('test.store');
