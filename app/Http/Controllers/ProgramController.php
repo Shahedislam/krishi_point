@@ -35,5 +35,10 @@ class ProgramController extends Controller
         return view("local-operator.soil_view",compact('soil_info'));
     }
 
+    public function show_admin()
+    {
+        return view('Administrator.admin');
+    }
+
 
 }

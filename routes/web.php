@@ -112,7 +112,18 @@ Route::get('/delivery/{id}', 'AssignSupplierController@delivery_status')->name('
 //tester
 Route::get('/tester', 'TesterController@tester_info');
 Route::post('/testtore', 'TesterController@reg')->name('test.store');
-
+//operator
 Route::get('/operator', 'OperatorController@operator_info');
 Route::post('/opttore', 'OperatorController@reg')->name('oper.store');
+
+
+
+//administrator
+Route::get('/admin', 'ProgramController@show_admin');
+Route::get('/view_tester', 'TesterController@view_tester');
+Route::get('/view_operator', 'OperatorController@view_operator');
+Route::get('/view_supplier', 'SupplierController@view_supplier');
+Route::get('/view_manager', 'ManagerController@view_manager');
+
+
 

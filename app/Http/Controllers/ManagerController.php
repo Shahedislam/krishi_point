@@ -58,4 +58,11 @@ class ManagerController extends Controller
         return view('local-operator.disease_info',compact('id'));
     }
 
+    public function view_manager()
+    {
+        $manager_info=manager::all();
+        return view('Administrator.view_manager',compact('manager_info'));
+    }
+
+
     }

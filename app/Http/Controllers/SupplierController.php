@@ -68,6 +68,13 @@ class SupplierController extends Controller
     }
 
 
+    public function view_supplier()
+    {
+        $supplier_info=supplier::all();
+        return view('Administrator.view_supplier',compact('supplier_info'));
+    }
+
+
 
 
 }

@@ -35,4 +35,10 @@ class OperatorController extends Controller
     {
         return view('local-operator.operator_form');
     }
+
+    public function view_operator()
+    {
+        $operator_info=operator::all();
+        return view('Administrator.view_operator',compact('operator_info'));
+    }
 }
