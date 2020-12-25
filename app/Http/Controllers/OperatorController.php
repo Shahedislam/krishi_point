@@ -1,17 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\tester;
 
-use App\manager;
+use App\operator;
+use App\tester;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
-class TesterController extends Controller
+class OperatorController extends Controller
 {
     //
-
     public function reg(Request $request)
     {
         $worker=new User();
@@ -20,7 +19,7 @@ class TesterController extends Controller
         $worker->password=Hash::make('12345678');
         $worker->save();
 
-        $test=new tester();
+        $test=new operator();
         $test->name= $request->NAME;
         $test->address= $request->ADDRESS;
         $test->user_id=$worker->id;
@@ -28,12 +27,12 @@ class TesterController extends Controller
         $test->email = $request->Email;
         $test->save();
 
-        return redirect('/tester');
+        return redirect('/operator');
 
     }
 
-    public function tester_info()
+    public function operator_info()
     {
-        return view('tester.tester_form');
+        return view('local-operator.operator_form');
     }
 }

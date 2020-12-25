@@ -112,3 +112,7 @@ Route::get('/delivery/{id}', 'AssignSupplierController@delivery_status')->name('
 //tester
 Route::get('/tester', 'TesterController@tester_info');
 Route::post('/testtore', 'TesterController@reg')->name('test.store');
+
+Route::get('/operator', 'OperatorController@operator_info');
+Route::post('/opttore', 'OperatorController@reg')->name('oper.store');
+
