@@ -683,7 +683,15 @@
                             <!-- end page title -->
                         </div>
                     </div>
-                    <!-- end row -->
+                    <div class="col-sm-12 col-lg-12 col-xxl-12 mb-30">
+                        <div class="card card-statistics">
+                            <div class="card-header">
+                                <div class="card-heading">
+                                    <h4 class="card-title text-center">Supplier Info</h4>
+                                </div>
+                            </div>
+
+                            <!-- end row -->
                     <!-- begin row -->
                     <div class="row editable-wrapper">
                         <div class="col-lg-12 ">

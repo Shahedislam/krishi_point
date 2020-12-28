@@ -29,7 +29,7 @@
         <div class="loader">
             <div class="h-100 d-flex justify-content-center">
                 <div class="align-self-center">
-                    <img src="assets/img/loader/loader.svg" alt="loader">
+                    <img src="assets/img/loader/loader" alt="ADMINISTRATOR">
                 </div>
             </div>
         </div>
@@ -43,7 +43,8 @@
                 <div class="navbar-header d-flex align-items-center">
                     <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
                     <a class="navbar-brand" href="mainpage.blade.php">
-                        <img src="assets/img/OPERATOR.jpg" class="img-fluid logo-desktop" alt="logo" />
+                        <img src="assets/img/loader/loader" class="img-fluid logo-desktop" alt="KRISHI-POINT" />
+
                         <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
                     </a>
                 </div>
@@ -201,7 +202,7 @@
                                                             <div class="notify-icon bg-img align-self-center">
                                                                 <img class="img-fluid" src="assets/img/avtar/06.jpg" alt="user6">
                                                             </div>
-                                                            <div class="notify-message">
+                                                            <div class="notify-mess9age">
                                                                 <p class="font-weight-bold">Demian Leyon</p>
                                                                 <small>I like your themes</small>
                                                             </div>
@@ -403,10 +404,10 @@
                             </a>
                             <ul aria-expanded="false">
                                 <li class="active"> <a href='#'>dashboard</a> </li>
-                                <li> <a href='view_operator.blade.php'>Add-Local-Opeator</a> </li>
-                                <li> <a href='view_supplier.blade.php'>Add-Supplier</a> </li>
-                                <li> <a href='view_supplier.blade.php'>Add-Manager</a> </li>
-                                <li> <a href='view_tester.blade.php'>Add-Local-Tester</a> </li>
+                                <li> <a href='operator'>Add-Local-Opeator</a> </li>
+                                <li> <a href='info'>Add-Supplier</a> </li>
+                                <li> <a href='man'>Add-Manager</a> </li>
+                                <li> <a href='tester'>Add-Local-Tester</a> </li>
 
                             </ul>
 

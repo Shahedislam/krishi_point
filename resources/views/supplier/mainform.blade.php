@@ -712,34 +712,43 @@
                                     <div class="card-body">
                                         <form id="info" action="{{ route("info.store") }}" method="POST">
                                             @csrf
+                                            <div class="form-row">
+                                            <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="control-label" for="firstname1">NAME</label>
+                                                <label class="control-label" for="firstname1">Name</label>
                                                 <div class="mb-2">
                                                     <input type="text" class="form-control" id="" name="NAME" placeholder="NAME" />
                                                 </div>
                                             </div>
+                                            </div>
+                                            <div class="col-md-8">
                                             <div class="form-group">
-                                                <label class="control-label" for="ADDRESS">ADDRESS</label>
+                                                <label class="control-label" for="ADDRESS">Address</label>
                                                 <div class="mb-2">
                                                     <input type="text" class="form-control" id="ADDRESS" name="ADDRESS" placeholder="ADDRESS" />
                                                 </div>
                                             </div>
+                                            </div>
 
+                                            <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="control-label" for="ADDRESS">Area</label>
                                                 <div class="mb-2">
                                                     <input type="text" class="form-control" id="Area" name="Area" placeholder="Area" />
                                                 </div>
                                             </div>
-
+                                            </div>
+                                            <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="control-label" for="username1">PHONE-NO</label>
+                                                <label class="control-label" for="username1">Phone No</label>
                                                 <div class="mb-2">
                                                     <input type="text" class="form-control" id="PHONE_NO" name="PHONE_NO" placeholder="PHONE_NO" />
                                                 </div>
 
 
                                             </div>
+                                            </div>
+                                            <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="control-label" for="username1">User-id</label>
                                                 <div class="mb-2">
@@ -748,23 +757,25 @@
 
 
                                             </div>
+                                            </div>
+                                            <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="control-label" for="SOIL-ID">Email</label>
                                                 <div class="mb-2">
                                                     <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" />
                                                 </div>
-
-
-
-                                            <div class="form-group">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="agree1" name="agree1">
-                                                    <label class="form-check-label" for="agree1">
-                                                        Please agree to our policy
-                                                    </label>
-                                                </div>
                                             </div>
-                                            <div class="form-group">
+                                            </div>
+                                            </div>
+
+
+                                                <div class="form-row">
+                                                    <div class="col-md-4">
+
+                                                    </div>
+                                                    <div class="col-md-5">
+
+                                                    <div class="form-group">
                                                 <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Submit</button>
                                             </div>
                                         </form>
