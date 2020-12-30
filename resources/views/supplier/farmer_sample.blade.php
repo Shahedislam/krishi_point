@@ -31,18 +31,20 @@
                                                     <th>delivery</th>
 
                                                 </tr>
-                                                <tr><td>{{$soil_info->NAME}}</td>
-                                                    <td>{{$soil_info->FARMER_ID}}
-                                                    <td>{{$soil_info->PHONE_NO}}</td>
-                                                    <td>{{$soil_info->ADDRESS}}</td>
-                                                    <td>{{$soil_info->test_name}}</td>
-                                                    <td>{{$soil_info->SOIL_ID}}</td>
-                                                    <td>{{$soil_info->Payment_number}}</td>
-                                                    <td><a href="delivery/{{$soil_info->id}}"
+                                                @foreach($soil_info as $soil)
+                                                <tr><td>{{$soil->NAME}}</td>
+                                                    <td>{{$soil->FARMER_ID}}
+                                                    <td>{{$soil->PHONE_NO}}</td>
+                                                    <td>{{$soil->ADDRESS}}</td>
+                                                    <td>{{$soil->test_name}}</td>
+                                                    <td>{{$soil->SOIL_ID}}</td>
+                                                    <td>{{$soil->Payment_number}}</td>
+                                                    <td><a href="assigntester/{{$soil->id}}"
                                                            class="btn btn-warning">delivery</a>
                                                     </td>
 
                                                 </tr>
+                                                @endforeach
                                                 <tr>
 
 

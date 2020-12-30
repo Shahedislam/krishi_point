@@ -114,9 +114,17 @@ Route::get('/rep', 'CropsDiseaseController@dashboard');
 
 Route::get('/delivery/{id}', 'AssignSupplierController@delivery_status')->name('delivery.store');
 
+
+//assign tester
+Route::get('/deliverysample', 'AssignTesterController@tester_view')->name('tester.store');
 //tester
 Route::get('/tester', 'TesterController@tester_info');
 Route::post('/testtore', 'TesterController@reg')->name('test.store');
+Route::get('/assigntester/{id}', 'TesterController@assign_tester');
+
+
+
+
 //operator
 Route::get('/operator', 'OperatorController@operator_info');
 Route::post('/opttore', 'OperatorController@reg')->name('oper.store');

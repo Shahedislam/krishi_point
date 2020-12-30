@@ -14,9 +14,8 @@
                                     <input type="hidden" name="program_id" value="{{$soil_info->id}}" method="post">
 
                                 <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table id="table"
-                                               class="table display responsive nowrap table-light table-bordered">
+                                    <div class="">
+                                        <table id="table" class="table display responsive nowrap table-light table-bordered">
                                             <tr>
                                                 <th>Farmers-name</th>
                                                 <th>Farmers-ID</th>
@@ -47,21 +46,29 @@
                                         </table>
 
                                         <div class="row">
-                                            <div class="row-cols-3">
-                                            <label for="cars">Choose a Supplier:</label>
-
-                                            <select name="suppli" class="form-control-md">
-                                                @if(!empty('supplier_info'))
-
-                                                    @foreach($supplier_info as $supply)
-                                                        <option value="{{$supply->user_id}}">{{$supply->name}}</option>
-                                                    @endforeach
 
 
-                                                @endif
+                                                <div class="col-md-3">
+                                                    <label for="">Choose a Supplier:</label>
+
+                                                    <select name="suppli" class="form-control">
+                                                        @if(!empty('supplier_info'))
+
+                                                            @foreach($supplier_info as $supply)
+                                                                <option value="{{$supply->user_id}}">{{$supply->name}}</option>
+                                                            @endforeach
 
 
-                                            </select>
+                                                        @endif
+
+
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+
+
                                             </div>
                                         </div>
                                         <div>
@@ -84,27 +91,4 @@
         </div>
         <!-- end app-container -->
         <!-- begin footer -->
-        <footer class="footer">
-            <div class="row">
-                <div class="col-12 col-sm-6 text-center text-sm-left">
-                    <p>&copy; Copyright 2019. All rights reserved.</p>
-                </div>
-                <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
-                    <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-                </div>
-            </div>
-        </footer>
-        <!-- end footer -->
-    </div>
-    <!-- end app-wrap -->
-</div>
-<!-- end app -->
-
-<!-- plugins -->
-<script src="../assets/js/vendors.js"></script>
-
-<!-- custom app -->
-<script src="../assets/js/app.js"></script>
-</body>
-
-</html>
+        @endsection

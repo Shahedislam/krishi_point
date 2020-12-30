@@ -57,7 +57,7 @@ class SupplierController extends Controller
             ->join("assign_suppliers","assign_suppliers.farmer_id","payments.id")
             ->join("suppliers","suppliers.user_id","assign_suppliers.supplier_name")
             ->select('payments.Payment_number','payments.test_name','programs.NAME','programs.FARMER_ID','programs.PHONE_NO','programs.ADDRESS','programs.SOIL_ID','assign_suppliers.id')
-            ->where('assign_suppliers.supplier_name',Auth::id())->orderBy('assign_suppliers.id','desc')->first();
+            ->where('assign_suppliers.supplier_name',Auth::id())->orderBy('assign_suppliers.id','desc')->get();
 
         return view('supplier.farmer_sample',compact('soil_info'));
     }

@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\supplier;
 use App\tester;
 
 use App\manager;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class TesterController extends Controller
@@ -45,5 +47,15 @@ class TesterController extends Controller
     public function view_homepage()
     {
         return view('Tester.tester_homepage');
+    }
+
+
+    public function assign_tester($id)
+    {
+
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where ('payments.id',$id)->first();
+        $tester_info=tester::all();
+
+        return view('Tester.assign_tester',compact('soil_info','tester_info'));;
     }
 }

@@ -21,12 +21,15 @@ return redirect('/soilview');
 }
 
 
+
+
+
 public function delivery_status($id)
 {
 $delivery=assign_supplier::find($id);
 $delivery->status=2;
 $delivery->save();
-return redirect('/sampleview');
+return view('Tester.assign_tester');
 }
 
 
