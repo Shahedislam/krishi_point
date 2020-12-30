@@ -95,7 +95,7 @@
 
 
                         <ul aria-expanded="false">
-                            <li><a href='sampleview'>view sample</a></li>
+                            <li><a href='#'>receive sample</a></li>
 
 
                         </ul>
@@ -147,4 +147,5 @@
 
 
 </html>
+
 

@@ -94,11 +94,11 @@
                         </li>
 
 
-                        <ul aria-expanded="false">
-                            <li><a href='sampleview'>view sample</a></li>
+                            <ul aria-expanded="false">
+                                <li><a href='sampleview'>view sample</a></li>
 
 
-                        </ul>
+                            </ul>
 
 
 

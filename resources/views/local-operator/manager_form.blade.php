@@ -1,4 +1,4 @@
-@extends('local-operator.style')
+@extends('Administrator.admin')
 @section("content")
 
 

@@ -62,7 +62,12 @@ Route::get('/crops_payment', 'PaymentController@crops');
 Route::post('/crinvoice', 'PaymentController@payment_crops')->name('crops_payment.store');
 
 //supplier
+Route::get('/homepage', 'SupplierController@sup_mainpage');
 Route::get('/info', 'SupplierController@supplier_info');
+
+
+
+
 Route::post('/infostore', 'SupplierController@reg')->name('info.store');
 
 
@@ -127,3 +132,4 @@ Route::get('/view_manager', 'ManagerController@view_manager');
 
 
 
+Route::get('/testerhome', 'TesterController@view_homepage');

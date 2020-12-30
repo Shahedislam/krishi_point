@@ -76,5 +76,10 @@ class SupplierController extends Controller
 
 
 
+public function sup_mainpage()
+{
+    return view('supplier.supplier_mainpage');
+}
+
 
 }

@@ -1,4 +1,4 @@
-@extends('local-operator.style')
+@extends('supplier.supplier_mainpage')
 @section("content")
 
 

@@ -42,4 +42,8 @@ class TesterController extends Controller
         $tester_info=tester::all();
         return view('Administrator.view_tester',compact('tester_info'));
     }
+    public function view_homepage()
+    {
+        return view('Tester.tester_homepage');
+    }
 }
