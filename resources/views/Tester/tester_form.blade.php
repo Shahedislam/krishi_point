@@ -67,11 +67,42 @@
                                         </div>
                                     </div>
                                     </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="SOIL-ID">Password</label>
+                                            <div class="mb-2">
+                                                <input type="text" class="form-control" id="password" name="password" placeholder="password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="SOIL-ID">Designation</label>
+                                            <div class="mb-2">
+                                                <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" />
+                                            </div>
+                                        </div>
                                     </div>
 
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="SOIL-ID">Institute</label>
+                                    <div class="mb-2">
+                                        <input type="text" class="form-control" id="institute" name="institute" placeholder="Institute" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
-                                    <div class="form-row">
+
+
+
+
+
+                            <div class="form-row">
                                         <div class="col-md-4">
 
                                         </div>

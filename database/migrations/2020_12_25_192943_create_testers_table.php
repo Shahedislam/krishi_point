@@ -20,7 +20,9 @@ class CreateTestersTable extends Migration
             $table->string("phone_no");
             $table->string("user_id");
             $table->string("email");
-
+            $table->string("designation");
+            $table->string("institute");
+            $table->string("password");
             $table->timestamps();
         });
     }

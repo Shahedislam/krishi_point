@@ -7,6 +7,7 @@ use App\tester;
 use App\manager;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
@@ -28,6 +29,9 @@ class TesterController extends Controller
         $test->user_id=$worker->id;
         $test->phone_no= $request->PHONE_NO;
         $test->email = $request->Email;
+        $test->password= $request->password;
+        $test->designation= $request->designation;
+        $test->institute= $request->institute;
         $test->save();
 
         return redirect('/tester');
@@ -52,8 +56,13 @@ class TesterController extends Controller
 
     public function assign_tester($id)
     {
+        $soil_info=DB::table("programs")
+            ->join("payments","programs.id","payments.farmer_id")
+            ->join("assign_suppliers","assign_suppliers.farmer_id","payments.id")
+            ->join("suppliers","suppliers.user_id","assign_suppliers.supplier_name")
+            ->select('payments.Payment_number','payments.test_name','programs.NAME','programs.FARMER_ID','programs.PHONE_NO','programs.ADDRESS','programs.SOIL_ID','assign_suppliers.id')
+            ->where('assign_suppliers.id',$id)->orderBy('assign_suppliers.id','desc')->first();
 
-        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where ('payments.id',$id)->first();
         $tester_info=tester::all();
 
         return view('Tester.assign_tester',compact('soil_info','tester_info'));;

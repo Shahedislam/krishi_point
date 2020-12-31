@@ -15,8 +15,12 @@ class CreateAssignTestersTable extends Migration
     {
         Schema::create('assign_testers', function (Blueprint $table) {
             $table->id();
-            $table->string("farmer_id");
+            $table->string("invoice_id");
             $table->string("tester_name");
+            $table->string("supplier_name");
+            $table->string("sample_submission");
+            $table->string("assign_date");
+
             $table->timestamps();
         });
     }
