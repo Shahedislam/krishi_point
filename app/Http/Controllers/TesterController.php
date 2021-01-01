@@ -60,11 +60,24 @@ class TesterController extends Controller
             ->join("payments","programs.id","payments.farmer_id")
             ->join("assign_suppliers","assign_suppliers.farmer_id","payments.id")
             ->join("suppliers","suppliers.user_id","assign_suppliers.supplier_name")
-            ->select('payments.Payment_number','payments.test_name','programs.NAME','programs.FARMER_ID','programs.PHONE_NO','programs.ADDRESS','programs.SOIL_ID','assign_suppliers.id')
+            ->select('payments.Payment_number','payments.test_name','programs.NAME','programs.FARMER_ID','programs.PHONE_NO','programs.ADDRESS','programs.SOIL_ID','assign_suppliers.id','programs.id as programs_id')
             ->where('assign_suppliers.id',$id)->orderBy('assign_suppliers.id','desc')->first();
-
+//dd($soil_info);
         $tester_info=tester::all();
 
         return view('Tester.assign_tester',compact('soil_info','tester_info'));;
     }
+
+    public function tester_sample()
+    {
+        $soil_info=DB::table("programs")
+            ->join("payments","programs.id","payments.farmer_id")
+            ->join("assign_testers","assign_testers.invoice_id","programs.id")
+            ->join("testers","testers.user_id","assign_testers.tester_name")
+            ->select('payments.Payment_number','payments.test_name','programs.NAME','programs.FARMER_ID','programs.PHONE_NO','programs.ADDRESS','programs.SOIL_ID','assign_testers.id')
+            ->where('assign_testers.tester_name',Auth::id())->orderBy('assign_testers.id','desc')->get();
+//dd(Auth::id());
+        return view('Tester.tester_view_sample',compact('soil_info'));
+    }
+
 }

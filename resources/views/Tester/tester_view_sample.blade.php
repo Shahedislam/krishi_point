@@ -39,8 +39,8 @@
                                             <td>{{$soil->test_name}}</td>
                                             <td>{{$soil->SOIL_ID}}</td>
                                             <td>{{$soil->Payment_number}}</td>
-                                            <td><a href="tester/{{$soil->id}}"
-                                                   class="btn btn-warning">delivery</a>
+                                            <td><a href="report/{{$soil->id}}"
+                                                   class="btn btn-warning">Make Report</a>
                                             </td>
 
                                         </tr>

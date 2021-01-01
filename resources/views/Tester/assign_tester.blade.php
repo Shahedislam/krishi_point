@@ -1,4 +1,4 @@
-@extends('local-operator.style')
+@extends('supplier.supplier_mainpage')
 @section("content")
 
     <div class="app-main" id="main">
@@ -9,9 +9,9 @@
             <div class="row editable-wrapper">
                 <div class="col-lg-12 ">
                     <div class="card card-statistics">
-                        <form id="payment" action="{{ route("tester.store") }}">
+                        <form id="payment" action="{{ route("tester.store") }}" >
                             @csrf
-                            <input type="hidden" name="program_id" value="{{$soil_info->id}}" method="post">
+                            <input type="hidden" name="program_id" value="{{$soil_info->programs_id}}">
 
                             <div class="card-body">
                                 <div class="">
@@ -71,7 +71,7 @@
                                             <input type="text" class="form-control" value = "{{ $soil_info->test_name }}" disabled>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for=""> S </label>
+                                            <label for=""> Soil Id </label>
                                             <input type="text" class="form-control" value = "{{ $soil_info->SOIL_ID }}" disabled>
                                         </div>
 
@@ -102,6 +102,13 @@
                                         </select>
 
                                     </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="control-label" for="delivery">Assign date</label>
+                                            <div class="mb-2">
+                                                <input type="date" class="form-control" id="date" name="date"
+                                                       placeholder="delivery-date"/>
+                                            </div>
                                 </div>
 
 

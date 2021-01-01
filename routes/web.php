@@ -122,6 +122,8 @@ Route::get('/tester', 'TesterController@tester_info');
 Route::post('/testtore', 'TesterController@reg')->name('test.store');
 Route::get('/assigntester/{id}', 'TesterController@assign_tester');
 
+Route::get('/testview', 'TesterController@tester_sample');
+
 
 
 
@@ -141,3 +143,5 @@ Route::get('/view_manager', 'ManagerController@view_manager');
 
 
 Route::get('/testerhome', 'TesterController@view_homepage');
+
+Route::get('/report/{id}', 'ReportController@make_report');

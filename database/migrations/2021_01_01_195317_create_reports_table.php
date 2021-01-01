@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAssignTestersTable extends Migration
+class CreateReportsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,8 @@ class CreateAssignTestersTable extends Migration
      */
     public function up()
     {
-        Schema::create('assign_testers', function (Blueprint $table) {
+        Schema::create('reports', function (Blueprint $table) {
             $table->id();
-            $table->string("invoice_id");
-            $table->string("tester_name");
-            $table->string("supplier_name");
-            $table->string("assign_date");
-            $table->string("status");
-
             $table->timestamps();
         });
     }
@@ -32,6 +26,6 @@ class CreateAssignTestersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('assign_testers');
+        Schema::dropIfExists('reports');
     }
 }
