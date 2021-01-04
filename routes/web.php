@@ -145,3 +145,8 @@ Route::get('/view_manager', 'ManagerController@view_manager');
 Route::get('/testerhome', 'TesterController@view_homepage');
 
 Route::get('/report/{id}', 'ReportController@make_report');
+
+
+//make report
+Route::get('/report', 'ResultController@result_form');
+Route::post('/reportstore', 'ResultController@make_result')->name('makeresult.store');

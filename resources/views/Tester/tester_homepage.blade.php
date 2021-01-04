@@ -116,7 +116,7 @@
             </aside>
             <!-- end app-navbar -->
             <!-- begin app-main -->
-        @yield("content")
+
         <!-- end container-fluid -->
         </div>
 
@@ -124,6 +124,7 @@
         <!-- begin footer -->
         <footer class="footer">
             <div class="row">
+
                 <div class="col-12 col-sm-6 text-center text-sm-left">
                     <p>&copy; Copyright 2019. All rights reserved.</p>
                 </div>

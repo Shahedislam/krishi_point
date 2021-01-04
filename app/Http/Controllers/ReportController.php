@@ -14,6 +14,6 @@ class ReportController extends Controller
         //$soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->where('programs.id')->first();
 //dd($soil_info);
 
-        return view('Tester.soil_report');
+        return view('Tester.make_result');
     }
 }
