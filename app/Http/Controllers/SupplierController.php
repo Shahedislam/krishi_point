@@ -81,5 +81,12 @@ public function sup_mainpage()
     return view('supplier.supplier_mainpage');
 }
 
+    public function delete_supplier($id)
+    {
+        $delete=supplier::find($id);
+        $delete->delete();
+        return redirect('admin');
+    }
+
 
 }

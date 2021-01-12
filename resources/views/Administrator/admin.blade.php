@@ -106,6 +106,18 @@
                             </ul>
                         </li>
 
+                        <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-calendar"></i><span
+                                    class="nav-title">Registered Sample</span></a>
+                            <ul aria-expanded="false">
+                                <li><a href='/samplesoil'>Soil Sample</a></li>
+                                <li><a href='samplecrops'>Crops Sample</a></li>
+
+
+                            </ul>
+                        </li>
+
+
 
 
 

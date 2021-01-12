@@ -116,7 +116,7 @@
             </aside>
             <!-- end app-navbar -->
             <!-- begin app-main -->
-
+        @yield("content")
         <!-- end container-fluid -->
         </div>
 

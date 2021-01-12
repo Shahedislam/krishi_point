@@ -10,13 +10,13 @@
     <meta name="author" content="Potenza Global Solutions"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- app favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="{{asset('assets/img/favicon.ico')}}">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- plugin stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors.css')}}"/>
     <!-- app style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}"/>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         <div class="loader">
             <div class="h-100 d-flex justify-content-center">
                 <div class="align-self-center">
-                    <img src="assets/img/loader/loader.svg" alt="loader">
+                    <img src="{{asset('assets/img/loader/loader.svg')}}" alt="loader">
                 </div>
             </div>
         </div>
@@ -42,8 +42,8 @@
                 <div class="navbar-header d-flex align-items-center">
                     <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
                     <a class="navbar-brand" href="mainpage.blade.php">
-                        <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo"/>
-                        <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo"/>
+                        <img src="{{asset('assets/img/logo.png')}}" class="img-fluid logo-desktop" alt="logo"/>
+                        <img src="{{asset('assets/img/logo-icon.png')}}" class="img-fluid logo-mobile" alt="logo"/>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -94,11 +94,11 @@
                         </li>
 
 
-                            <ul aria-expanded="false">
-                                <li><a href='sampleview'>view sample</a></li>
+                        <ul aria-expanded="false">
+                            <li><a href='sampleview'>view sample</a></li>
 
 
-                            </ul>
+                        </ul>
 
 
 
@@ -114,6 +114,8 @@
                 </div>
                 <!-- end sidebar-nav -->
             </aside>
+                <!-- end sidebar-nav -->
+            </aside>
             <!-- end app-navbar -->
             <!-- begin app-main -->
         @yield("content")
@@ -124,6 +126,7 @@
         <!-- begin footer -->
         <footer class="footer">
             <div class="row">
+
                 <div class="col-12 col-sm-6 text-center text-sm-left">
                     <p>&copy; Copyright 2019. All rights reserved.</p>
                 </div>
@@ -139,12 +142,13 @@
 <!-- end app -->
 
 <!-- plugins -->
-<script src="assets/js/vendors.js"></script>
+<script src="{{asset('assets/js/vendors.js')}}"></script>
 
 <!-- custom app -->
-<script src="assets/js/app.js"></script>
+<script src="{{asset('assets/js/app.js')}}"></script>
 </body>
 
 
 </html>
+
 

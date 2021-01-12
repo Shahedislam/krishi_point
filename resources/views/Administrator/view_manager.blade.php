@@ -38,7 +38,7 @@
                                                     <td>{{$tester->phone_no}}</td>
                                                     <td>{{$tester->email}}</td>
 
-                                                    <td><a href="#" class="btn btn-warning">delete</a></td>
+                                                    <td><a href="delete-manager/{{$tester->id}}" class="btn btn-warning">delete</a></td>
 
                                                 </tr>
                                                 @endforeach

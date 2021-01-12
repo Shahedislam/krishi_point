@@ -1,5 +1,5 @@
 @extends('Tester.tester_homepage')
-
+@section('content')
     <!-- end row -->
     <!-- start Validation row -->
     <div class="app-main" id="main">
@@ -205,6 +205,8 @@
     </div>
     <!-- end app -->
 
-    <!-- plugins -->
+    <!-- plugins --
 
+    >
+@endsection
 

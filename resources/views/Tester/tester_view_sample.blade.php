@@ -1,4 +1,4 @@
-@extends('supplier.supplier_mainpage')
+@extends('Tester.tester_homepage')
 @section("content")
 
 

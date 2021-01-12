@@ -1,20 +1,16 @@
 @extends('Administrator.admin')
 @section("content")
-    <!-- end row -->
-    <!-- start Validation row -->
     <div class="app-main" id="main">
         <!-- begin container-fluid -->
         <div class="container-fluid">
 
-        <div class="col-sm-12 col-lg-12 col-xxl-12 mb-30">
-                        <div class="card card-statistics">
-                            <div class="card-header">
-                                <div class="card-heading">
-                                    <h4 class="card-title text-center">Supplier Info</h4>
-                                </div>
-                            </div>
-
-                            <!-- end row -->
+            <!-- end row --><div class="col-sm-12 col-lg-12 col-xxl-12 mb-30">
+                <div class="card card-statistics">
+                    <div class="card-header">
+                        <div class="card-heading">
+                            <h4 class="card-title text-center">Soil Sample</h4>
+                        </div>
+                    </div>
                     <!-- begin row -->
                     <div class="row editable-wrapper">
                         <div class="col-lg-12 ">
@@ -23,23 +19,25 @@
                                     <div class="table-responsive">
                                         <table id="table" class="table display responsive nowrap table-light table-bordered">
                                             <tr>
-                                                <th>name</th>
-                                                <th>address</th>
-                                                <th>area</th>
-                                                <th>phone-no</th>
-                                                <th>email</th>
+                                                <th>Farmers-name</th>
+                                                <th>Farmers-ID</th>
+                                                <th>Address</th>
+                                                <th>Phone-no</th>
+                                                <th>Test-name</th>
+                                                <th>Soil-ID</th>
+                                                <th>Payment-No</th>
                                                 <th>Action</th>
-
                                             </tr>
-                                            @foreach($supplier_info as $tester)
+                                            @foreach($soil_info as $soil)
                                                 <tr>
-                                                    <td>{{$tester->name}}</td>
-                                                    <td>{{$tester->address}}</td>
-                                                    <td>{{$tester->area}}</td>
-                                                    <td>{{$tester->phone_no}}</td>
-                                                    <td>{{$tester->email}}</td>
+                                                    <td>{{$soil->NAME}}</td>
+                                                    <td>{{$soil->FARMER_ID}}</td>
+                                                    <td>{{$soil->ADDRESS}}</td>
+                                                    <td>{{$soil->PHONE_NO}}</td>
+                                                    <td>{{$soil->test_name}}</td>
+                                                    <td>{{$soil->SOIL_ID}}</td>
+                                                    <td>{{$soil->Payment_number}}</td>
 
-                                                    <td><a href="delete-supplier/{{$tester->id}}" class="btn btn-warning">delete</a></td>
 
                                                 </tr>
                                                 @endforeach
@@ -70,19 +68,4 @@
                 </div>
             </div>
         </footer>
-        <!-- end footer -->
-    </div>
-    <!-- end app-wrap -->
-</div>
-<!-- end app -->
-
-<!-- plugins -->
-<script src="assets/js/vendors.js"></script>
-
-<!-- custom app -->
-<script src="assets/js/app.js"></script>
-</body>
-
-</html>
-
-
+    @endsection

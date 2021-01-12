@@ -139,8 +139,8 @@ Route::get('/view_tester', 'TesterController@view_tester');
 Route::get('/view_operator', 'OperatorController@view_operator');
 Route::get('/view_supplier', 'SupplierController@view_supplier');
 Route::get('/view_manager', 'ManagerController@view_manager');
-
-
+Route::get('/samplesoil', 'ProgramController@soil_sample');
+Route::get('/samplecrops', 'ProgramController@crops_sample');
 
 Route::get('/testerhome', 'TesterController@view_homepage');
 
@@ -150,3 +150,9 @@ Route::get('/report/{id}', 'ReportController@make_report');
 //make report
 Route::get('/report', 'ResultController@result_form');
 Route::post('/reportstore', 'ResultController@make_result')->name('makeresult.store');
+Route::get('/delete-operator/{id}', 'OperatorController@delete_operator');
+Route::get('/delete-supplier/{id}', 'SupplierController@delete_supplier');
+Route::get('/delete-tester/{id}', 'TesterController@delete_tester');
+Route::get('/delete-manager/{id}', 'ManagerController@delete_manager');
+
+

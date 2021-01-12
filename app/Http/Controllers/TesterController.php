@@ -79,5 +79,11 @@ class TesterController extends Controller
 //dd(Auth::id());
         return view('Tester.tester_view_sample',compact('soil_info'));
     }
+    public function delete_tester($id)
+    {
+        $delete=tester::find($id);
+        $delete->delete();
+        return redirect('admin');
+    }
 
 }

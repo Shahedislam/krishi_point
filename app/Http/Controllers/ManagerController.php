@@ -64,5 +64,12 @@ class ManagerController extends Controller
         return view('Administrator.view_manager',compact('manager_info'));
     }
 
+    public function delete_manager($id)
+    {
+        $delete=manager::find($id);
+        $delete->delete();
+        return redirect('admin');
+    }
+
 
     }

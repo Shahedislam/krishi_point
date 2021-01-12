@@ -41,4 +41,16 @@ class ProgramController extends Controller
     }
 
 
+    public function soil_sample()
+    {
+        $soil_info=DB::table("programs")->join("payments","programs.id","payments.farmer_id")->get();
+
+        return view('Administrator.show_soil_sample',compact('soil_info'));
+    }
+    public function crops_sample()
+    {
+        $crops_info=DB::table("crops_samples")->join("payments","crops_samples.id","payments.farmer_id")->get();
+        return view('Administrator.show_crops_sample',compact('crops_info'));
+    }
+
 }

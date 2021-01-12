@@ -41,4 +41,12 @@ class OperatorController extends Controller
         $operator_info=operator::all();
         return view('Administrator.view_operator',compact('operator_info'));
     }
+
+
+    public function delete_operator($id)
+    {
+$delete=operator::find($id);
+$delete->delete();
+return redirect('admin');
+    }
 }

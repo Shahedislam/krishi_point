@@ -54,16 +54,6 @@
 
                                     </div>
                                         </div>
-                                            <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="control-label" for="username1">User id</label>
-                                        <div class="mb-2">
-                                            <input type="text" class="form-control" id="user_id" name="user_id" placeholder="user id" />
-                                        </div>
-                                    </div>
-
-
-                                    </div>
                                         <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="SOIL-ID">Email</label>
