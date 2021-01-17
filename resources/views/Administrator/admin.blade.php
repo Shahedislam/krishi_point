@@ -85,14 +85,16 @@
                     <ul class="metismenu " id="sidebarNav">
 
 
-                        <ul aria-expanded="false">
-                            <li class="active"> <a href='#'>dashboard</a> </li>
-                            <li> <a href='operator'>Add-Local-Opeator</a> </li>
-                            <li> <a href='info'>Add-Supplier</a> </li>
-                            <li> <a href='man'>Add-Manager</a> </li>
-                            <li> <a href='tester'>Add-Tester</a> </li>
+                        <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                                    class="nav-icon ti ti-calendar"></i><span
+                                    class="nav-title">Add </span></a>
+                            <ul aria-expanded="false">
+                                <li><a href='operator'>local Opeator</a></li>
+                                <li><a href='info'>Supplier</a></li>
+                                <li><a href='man'>Manager</a></li>
+                                <li><a href='tester'>Tester</a></li>
 
-                        </ul>
+                            </ul>
 
                         <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
                                     class="nav-icon ti ti-calendar"></i><span

@@ -20,6 +20,7 @@ class TesterController extends Controller
         $worker=new User();
         $worker->name=$request->NAME;
         $worker->email=$request->Email;
+        $worker->user_type=4;
         $worker->password=Hash::make('12345678');
         $worker->save();
 

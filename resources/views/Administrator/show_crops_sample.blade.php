@@ -29,7 +29,7 @@
                                     <th>Crops-name</th>
                                     <th>Soil-ID</th>
                                     <th>Payment-No</th>
-                                    <th>Action</th>
+
                                 </tr>
                                 @foreach($crops_info as $crops)
                                     <tr>

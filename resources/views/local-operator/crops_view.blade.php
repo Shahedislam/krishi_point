@@ -42,7 +42,7 @@
                                                     <td>{{$crops->test_name}}</td>
                                                     <td>{{$crops->CROPS_ID}}</td>
                                                     <td>{{$crops->Payment_number}}</td>
-                                                    <td><a href='assign/{{$crops->id}}' class="btn btn-warning">Assign</a></td>
+                                                    <td><a href='assignmanager/{{$crops->id}}' class="btn btn-warning">Assign</a></td>
 
                                                 </tr>
                                                 @endforeach

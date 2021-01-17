@@ -53,4 +53,9 @@ class ProgramController extends Controller
         return view('Administrator.show_crops_sample',compact('crops_info'));
     }
 
+    public function view_login()
+    {
+        return view('auth-login');
+    }
+
 }

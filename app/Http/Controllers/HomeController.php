@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,27 @@ class HomeController extends Controller
      */
     public function index()
     {
+$user_type=Auth::user()->user_type;
+if($user_type==1)
+{
+    return redirect('admin');
+}
+        if($user_type==2)
+        {
+            return redirect('index-operator');
+        }
 
-        return view('local-operator.dashboard');
+        if($user_type==3)
+        {
+            return redirect('homepage');
+        }
+        if($user_type==4)
+        {
+            return redirect('testerhome');
+        }
+        if($user_type==5)
+        {
+            return redirect('crops');
+        }
     }
 }

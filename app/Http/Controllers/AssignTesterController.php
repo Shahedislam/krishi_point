@@ -22,7 +22,7 @@ class AssignTesterController extends Controller
         $assign->status=1;
 
         $assign->save();
-        return redirect('/soilview');
+        return redirect('/homepage');
     }
 
 

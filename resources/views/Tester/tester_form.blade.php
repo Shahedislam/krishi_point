@@ -18,6 +18,8 @@
                                     @csrf
 
                                     <div class="form-row">
+
+
                                     <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="firstname1">Name</label>
@@ -26,6 +28,7 @@
                                         </div>
                                     </div>
                                     </div>
+
                                     <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="ADDRESS">Address</label>
@@ -34,11 +37,9 @@
                                         </div>
                                     </div>
                                     </div>
+
+
                                         <div class="col-md-4">
-
-
-
-
                                     <div class="form-group">
                                         <label class="control-label" for="username1">Phone-no</label>
                                         <div class="mb-2">
@@ -48,8 +49,6 @@
 
                                     </div>
                                         </div>
-                                            <div class="col-md-4">
-
 
                                     <div class="col-md-4">
                                     <div class="form-group">

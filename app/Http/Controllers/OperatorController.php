@@ -16,6 +16,7 @@ class OperatorController extends Controller
         $worker=new User();
         $worker->name=$request->NAME;
         $worker->email=$request->Email;
+        $worker->user_type=2;
         $worker->password=Hash::make('12345678');
         $worker->save();
 

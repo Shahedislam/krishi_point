@@ -27,7 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/m', function () {
     return view('local-operator.mainpage');
 });
-Route::get('/n', function () {
+Route::get('/index-operator', function () {
     return view('local-operator.style');
 });
 Route::get('/index', function () {
@@ -93,7 +93,7 @@ Route::post('/manstore', 'ManagerController@reg')->name('man.store');
 
 
 Route::get('/manager', 'AssignManagerController@manager_show');
-//Route::get('/assign/{id}', 'ManagerController@assign_manager');
+//Route::get('/assignmanager/{id}', 'ManagerController@assign_manager');
 Route::get('/samp', 'ManagerController@farmer_sample');
 
 
@@ -155,4 +155,9 @@ Route::get('/delete-supplier/{id}', 'SupplierController@delete_supplier');
 Route::get('/delete-tester/{id}', 'TesterController@delete_tester');
 Route::get('/delete-manager/{id}', 'ManagerController@delete_manager');
 
+
+
+
+//login
+Route::get('/sytemlogin', 'ProgramController@view_login');
 
