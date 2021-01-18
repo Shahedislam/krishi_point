@@ -156,7 +156,7 @@ Route::get('/delete-tester/{id}', 'TesterController@delete_tester');
 Route::get('/delete-manager/{id}', 'ManagerController@delete_manager');
 
 
-
+Route::get('view_invoice', 'invoice@invoice_details');
 
 //login
 Route::get('/sytemlogin', 'ProgramController@view_login');

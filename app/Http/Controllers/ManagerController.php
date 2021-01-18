@@ -18,7 +18,7 @@ class ManagerController extends Controller
         $worker=new User();
         $worker->name=$request->NAME;
         $worker->email=$request->Email;
-        $worker->user_type=3;
+        $worker->user_type=5;
         $worker->password=Hash::make('12345678');
         $worker->save();
 

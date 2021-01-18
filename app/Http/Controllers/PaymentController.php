@@ -33,7 +33,7 @@ class PaymentController extends Controller
             $payment->test_count=$request->test_count;
             $payment->total_price=$request->total_price;
             $payment->farmer_id=$request->soil_id;
-
+            $payment->program_id_fk=$request->soil_id;
             $payment->save();
             $request->session()->put('soil_id',$request->soil_id);
             return redirect('/invoice');

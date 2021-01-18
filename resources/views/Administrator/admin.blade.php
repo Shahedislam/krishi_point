@@ -112,8 +112,8 @@
                                     class="nav-icon ti ti-calendar"></i><span
                                     class="nav-title">Registered Sample</span></a>
                             <ul aria-expanded="false">
-                                <li><a href='/samplesoil'>Soil Sample</a></li>
-                                <li><a href='samplecrops'>Crops Sample</a></li>
+                                <li><a href='#'>Soil Invoice</a></li>
+                                <li><a href='#'>Crops Invoice</a></li>
 
 
                             </ul>
