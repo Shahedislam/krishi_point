@@ -12,6 +12,9 @@ class ResultController extends Controller
     {
         $result =new produce_result();
         $result->labtest_id = $request->labtest_id;
+        $result->soil_id= $request->soil_id;
+        $result->farmer_id= $request->farmer_id;
+        $result->farmer_name= $request->farmer_name;
         $result->Phs= $request->Phs;
         $result->phosphorus = $request->phosphorus;
         $result->potassium= $request->potassium;
@@ -19,22 +22,24 @@ class ResultController extends Controller
         $result->organic_matter = $request->organic_matter;
         $result->cec = $request->cec;
         $result->nitrogen= $request->nitrogen;
-        $result->phosphorus_amount = $request->phosphorus_amount;
         $result->potash= $request->potash;
         $result->zinc = $request->zinc;
         $result->lime= $request->lime;
-        $result->comment1= $request->comment1;
-        $result->comment2= $request->comment2;
+        $result->comment= $request->comment;
+        $result->result= $request->result;
+        $result->date= $request->date;
 
 
         $result->save();
 
-        return view("Tester.soil_report");
+        return redirect("/make_result");
 
     }
 
-    public  function  result_form()
+    public  function  result_form($id)
     {
-        return view('Tester.make_result');
+        $result=produce_result::find($id);
+
+        return view('Tester.soil_report',compact('result'));
     }
 }

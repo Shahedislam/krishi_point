@@ -2,9 +2,6 @@
 @section("content")
 
 
-
-
-
     <div class="app-main" id="main">
         <!-- begin container-fluid -->
         <div class="container-fluid">
@@ -43,6 +40,15 @@
                     <div class="col-md-12 m-b-30">
 
                         <table id="meta">
+
+
+                            <tr>
+
+                                <td></td>
+                                <td class="meta-head">Lab Test ID</td>
+                                <td></td>
+                            </tr>
+
                             <tr>
 
                                 <td></td>
@@ -58,6 +64,17 @@
 
 
                             </tr>
+
+                            <tr>
+                                <td></td>
+
+                                <td class="meta-head">Soil-Id</td>
+
+                                <td></td>
+
+
+                            </tr>
+
                             <tr>
                                 <td></td>
                                 <td class="meta-head">Phone-NO</td>
@@ -73,7 +90,54 @@
 
 
                             </tr>
+                        </table>
 
+                    </div>
+                    <div>
+
+                        <table class="table" id="items">
+
+                            <tr>
+                                <th>Phs</th>
+                                <th>Phosphorus</th>
+                                <th>Potassium</th>
+                                <th>Organic Matter</th>
+                                <th>acidity</th>
+                                <th>Cec</th>
+                                <th>Nitrogen</th>
+                                <th>Potash</th>
+                                <th>sulfer</th>
+                                <th>lime</th>
+
+
+                            </tr>
+{{--                            <tr>--}}
+                            <tr>
+                                <td>{{$result->Phs}}</td>
+                            </tr>
+
+{{--                                <td>{{$soil_info->Payment_number}}</td>--}}
+{{--                                <td>{{$soil_info->test_name}}</td>--}}
+{{--                                <td>{{$soil_info->price}}</td>--}}
+{{--                                <td>{{$soil_info->test_count}}</td>--}}
+{{--                                <td>{{$soil_info->total_price}}</td>--}}
+{{--                            </tr>--}}
+                        </table>
+
+                        <table class="table" id="items">
+
+                            <tr>
+                                <th>Result-status</th>
+
+                            </tr>
+                        </table>
+
+                        <table class="table" id="items">
+
+                            <tr>
+                                <th>Comment</th>
+
+                            </tr>
                         </table>
 
 
@@ -92,15 +156,13 @@
         </div>
     </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
+
+
     <!--faq-contant-end-->
-    </div>
+    <
     <!-- end container-fluid -->
-    </div>
+
     <!-- end app-main -->
-    </div>
+    <
 @endsection

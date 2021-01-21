@@ -15,20 +15,23 @@ class CreateProduceResultsTable extends Migration
     {
         Schema::create('produce_results', function (Blueprint $table) {
             $table->id();
-            $table->string("labtest_id");
-            $table->string("Phs");
-            $table->string("phosphorus");
-            $table->string("potassium");
-            $table->string("calcium");
-            $table->string("organic_matter");
-            $table->string("cec");
-            $table->string("nitrogen");
-            $table->string("phosphorus_amount");
-            $table->string("potash");
-            $table->string("zinc");
-            $table->string("lime");
-            $table->string("comment1");
-            $table->string("comment2");
+            $table->string("labtest_id")->nullable();
+            $table->string("soil_id")->nullable();
+            $table->string("farmer_id")->nullable();
+            $table->string("farmer_name")->nullable();
+            $table->string("Phs")->nullable();
+            $table->string("phosphorus")->nullable();
+            $table->string("potassium")->nullable();
+            $table->string("calcium")->nullable();
+            $table->string("organic_matter")->nullable();
+            $table->string("cec")->nullable();
+            $table->string("nitrogen")->nullable();
+            $table->string("potash")->nullable();
+            $table->string("zinc")->nullable();
+            $table->string("lime")->nullable();
+            $table->string("comment")->nullable();
+            $table->string("result")->nullable();
+            $table->string("date")->nullable();
 
             $table->timestamps();
         });
