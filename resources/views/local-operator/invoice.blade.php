@@ -11,16 +11,20 @@
                             <!-- begin page title -->
                             <div class="d-block  d-sm-flex flex-nowrap align-items-center">
                                 <div class="page-title mb-2 mb-sm-0">
-                                    <h1>Invoice Details</h1>
                                 </div>
 
                             </div>
                             <!-- end page title -->
                         </div>
                         <div class="col-md-12 m-b-30">
-
-                            <table id="meta">
-                                <tr>
+                            <h3 class="text-center ">Krishi Point</h3>
+                            <p class="text-center">Savar,Dhaka-1206</p>
+                            <h4 class="text-center ">Invoice Report</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6" >
+                                    <table  style="font-size: 14px">
+                                    <tr>
                                     <td></td>
                                     <td class="meta-head">Invoice Number</td>
                                     <td>{{$soil_info->id}}</td>
@@ -33,48 +37,54 @@
 
 
                                 </tr>
+                                        <tr>
+
+                                            <td></td>
+                                            <td class="meta-head">Farmer-NAME</td>
+                                            <td>{{$soil_info->NAME}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+
+                                            <td class="meta-head">Farmer-ID</td>
+
+                                            <td>{{$soil_info->FARMER_ID}}</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="meta-head">Phone-NO</td>
+                                            <td>{{$soil_info->PHONE_NO}}</td>
+
+
+                                        </tr>
+
+                                        <tr>
+                                            <td></td>
+                                            <td class="meta-head">Address</td>
+                                            <td>{{$soil_info->ADDRESS}}</td>
+
+
+                                        </tr>
 
                             </table>
-                            <br>
-
-                            <div class="col-md-12 m-b-30">
-
-                                <table id="meta">
-                                    <tr>
-
-                                        <td></td>
-                                        <td class="meta-head">Farmer-NAME</td>
-                                        <td>{{$soil_info->NAME}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-
-                                        <td class="meta-head">Farmer-ID</td>
-
-                                        <td>{{$soil_info->FARMER_ID}}</td>
 
 
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td class="meta-head">Phone-NO</td>
-                                        <td>{{$soil_info->PHONE_NO}}</td>
+                                </div>
 
 
-                                    </tr>
+                                <div class="col-md-6 text-right">
 
-                                    <tr>
-                                        <td></td>
-                                        <td class="meta-head">Address</td>
-                                        <td>{{$soil_info->ADDRESS}}</td>
-
-
-                                    </tr>
-
-                                </table>
+                                    <p class="text-center"> <strong>{{ date("d M,Y",strtotime($soil_info->date)) }}</strong>  </p>
+                                    <h5 class="text-center"> Invoice Number </h5>
+                                    <h5></h5>
+                                    <p class="text-center" style="color:black" ><strong style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;"> Farmers Soil Receipt</strong></p>
+                                </div>
+                            </div>
 
                             </div>
-                            <div>
+
 
                                 <table class="table" id="items">
 
@@ -93,8 +103,7 @@
                                         <td>{{$soil_info->test_count}}</td>
                                         <td>{{$soil_info->total_price}}</td>
                                     </tr>
-
-
+                                </table>
                                     {{--<tr>
                                         <td colspan="2" class="blank"></td>
                                         <td colspan="2" class="total-line">Subtotal</td>
@@ -103,25 +112,39 @@
                                         </td>
                                     </tr>
                                     <tr>--}}
+                                <br><br><br>
 
 
-                                    <td colspan="2" class="blank"></td>
-                                    <td colspan="2" class="total-line">Amount Paid</td>
+                                <div class="row">
 
+                                    <div class="col-md-12">
+                                        Total Ammount : {{$soil_info->total_price}}
+                                    </div>
+                                    <br><br>
+                                    <div class="col-md-12">
+                                        <strong> Paid Amount : {{$soil_info->total_price}} </strong>
+                                    </div>
+                                </div>
 
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="blank"></td>
-                                        <td colspan="2" class="total-line balance">Balance Due</td>
-                                        <td class="total-value balance">
-                                            <div class="due"></div>
-                                        </td>
-                                    </tr>
-
-                                </table>
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4 text-right">
+                                <p > <strong>Report Finalized By</strong></p>
+                                <p>
+                                    @php
+                                        echo \Illuminate\Support\Facades\Auth::user()->name;
+                                    @endphp
+                                </p>
+                                <p>-----------------------------------</p>
+                                Date: {{ date("d/m/Y") }}
                             </div>
 
-                            <div class="modal-footer">
+                        </div>
+
+
+
+                        <div class="modal-footer">
 
                                 <button type="button" class="btn btn-success" onclick="printDiv('printdata')">print
                                 </button>
@@ -134,26 +157,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-<!--faq-contant-end-->
-</div>
-<!-- end container-fluid -->
-</div>
-<!-- end app-main -->
-</div>
-<!-- end app-container -->
-<!-- begin footer -->
 
-<!-- end footer -->
-</div>
-<!-- end app-wrap -->
-</div>
 <!-- end app -->
 
 <!-- plugins -->

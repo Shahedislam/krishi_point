@@ -17,8 +17,12 @@
                         <form id="info" action="{{ route("makeresult.store") }}" method="POST">
                             @csrf
 
-
-
+                            <input type="hidden" name="soil_id" value="{{$soil_info->SOIL_ID}}">
+                            <input type="hidden" name="farmer_id" value="{{$soil_info->FARMER_ID}}">
+                            <input type="hidden" name="farmer_name" value="{{$soil_info->NAME}}">
+                            <input type="hidden" name="address" value="{{$soil_info->ADDRESS}}">
+                            <input type="hidden" name="phone_no" value="{{$soil_info->PHONE_NO}}">
+                            <input type="hidden" name="invoice_id" value="{{$soil_info->invoice_id}}">
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label class="control-label" for="firstname1">Date</label>
@@ -43,21 +47,49 @@
 
                                 <div class="col-md-3">
                                     <div class="form-group">
+                                        <label class="control-label" for="firstname1">Invoice Id</label>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control" value = "{{$soil_info->invoice_id}}"
+                                                   placeholder="invoice Id" disabled/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
                                         <label class="control-label" for="firstname1">Soil Id</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" value = "{{ $soil_info->SOIL_ID}}"id="soil_id" name="soil_id"
+                                            <input type="text" class="form-control" value = "{{$soil_info->SOIL_ID}}"
                                                    placeholder="Soil Id" disabled/>
                                         </div>
                                     </div>
                                 </div>
 
-
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label class="control-label" for="firstname1">Farmer Id</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" value = "{{ $soil_info->FARMER_ID}}" id="farmer_id" name="labtest_id"
+                                            <input type="text" class="form-control" value ="{{ $soil_info->FARMER_ID}}"
                                                    placeholder="Farmer Id" disabled/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="control-label" for="firstname1">Address</label>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control" value = "{{ $soil_info->ADDRESS}}"
+                                                   placeholder="Address" disabled/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="control-label" for="firstname1">Phone-no</label>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control" value = "{{ $soil_info->PHONE_NO}}"
+                                                   placeholder="Phone-no" disabled/>
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +99,7 @@
                                     <div class="form-group">
                                         <label class="control-label" for="firstname1">Farmer Name</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" value = "{{ $soil_info->NAME}} "id="farmer_name" name="farmer_name"
+                                            <input type="text" class="form-control" value = "{{ $soil_info->NAME}}"
                                                    placeholder="Farmer Name" disabled/>
                                         </div>
                                     </div>

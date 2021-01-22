@@ -12,9 +12,12 @@ class ResultController extends Controller
     {
         $result =new produce_result();
         $result->labtest_id = $request->labtest_id;
+        $result->invoice_id = $request->invoice_id;
         $result->soil_id= $request->soil_id;
         $result->farmer_id= $request->farmer_id;
         $result->farmer_name= $request->farmer_name;
+        $result->address= $request->address;
+        $result->phone_no= $request->phone_no;
         $result->Phs= $request->Phs;
         $result->phosphorus = $request->phosphorus;
         $result->potassium= $request->potassium;
@@ -23,6 +26,8 @@ class ResultController extends Controller
         $result->cec = $request->cec;
         $result->nitrogen= $request->nitrogen;
         $result->potash= $request->potash;
+        $result->acidity= $request->acidity;
+        $result->sulfer= $request->sulfer;
         $result->zinc = $request->zinc;
         $result->lime= $request->lime;
         $result->comment= $request->comment;
@@ -32,7 +37,7 @@ class ResultController extends Controller
 
         $result->save();
 
-        return redirect("/make_result");
+        return redirect('/make_result/'.$result->id);
 
     }
 

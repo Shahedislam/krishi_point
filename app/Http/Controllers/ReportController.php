@@ -18,7 +18,7 @@ class ReportController extends Controller
             ->join("payments","programs.id","payments.farmer_id")
             ->join("assign_testers","assign_testers.invoice_id","programs.id")
             ->join("testers","testers.user_id","assign_testers.tester_name")
-            ->select('programs.NAME','programs.FARMER_ID','programs.SOIL_ID','assign_testers.id')
+            ->select('programs.NAME','programs.FARMER_ID','programs.SOIL_ID','programs.ADDRESS','programs.PHONE_NO','assign_testers.invoice_id','assign_testers.id')
             ->where('assign_testers.tester_name',Auth::id())
             ->where ('assign_testers.id',$id)
             ->orderBy('assign_testers.id','desc')->first();

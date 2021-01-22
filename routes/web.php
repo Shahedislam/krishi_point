@@ -147,7 +147,7 @@ Route::get('/testerhome', 'TesterController@view_homepage');
 Route::get('/report/{id}', 'ReportController@make_report');
 
 //////make result of soil
-Route::get('/make_result', 'ResultController@result_form');
+Route::get('/make_result/{id}', 'ResultController@result_form');
 
 
 //make report

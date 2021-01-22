@@ -17,6 +17,7 @@ class CreatePaymentsTable extends Migration
             $table->id();
             $table->string("Payment_number")->nullable();
             $table->string("test_name")->nullable();
+            $table->string("date")->nullable();
             $table->string("price")->nullable();
             $table->string("test_count")->nullable();
             $table->string("total_price")->nullable();

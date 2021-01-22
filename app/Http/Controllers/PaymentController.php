@@ -29,6 +29,7 @@ class PaymentController extends Controller
             $payment=new payment();
             $payment->Payment_number=$request->Payment_Number;
             $payment->test_name=$request->test_name;
+            $payment->date=$request->date;
             $payment->price=$request->price;
             $payment->test_count=$request->test_count;
             $payment->total_price=$request->total_price;
