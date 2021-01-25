@@ -25,4 +25,6 @@ class ReportController extends Controller
 
         return view('Tester.make_result',compact('soil_info'));
     }
+
+
 }

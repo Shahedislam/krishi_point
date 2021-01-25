@@ -15,6 +15,7 @@ class CreateAssignManagersTable extends Migration
     {
         Schema::create('assign_managers', function (Blueprint $table) {
             $table->id();
+            $table->string("invoice_id");
             $table->string("farmer_id");
             $table->string("manager_name");
 

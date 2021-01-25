@@ -93,22 +93,22 @@ Route::post('/manstore', 'ManagerController@reg')->name('man.store');
 
 
 Route::get('/manager', 'AssignManagerController@manager_show');
-//Route::get('/assignmanager/{id}', 'ManagerController@assign_manager');
+Route::get('/assignmanager/{id}', 'ManagerController@assign_manager');
 Route::get('/samp', 'ManagerController@farmer_sample');
 
 
-//Route::get('/manassign', 'AssignManagerController@manager_view')->name('assign.store');
+Route::get('/manassign', 'AssignManagerController@manager_view')->name('assigncrops.store');
 
-//Route::get('/sampleview', 'ManagerController@farmer_sample');
+Route::get('/sample_crops', 'ManagerController@farmer_sample');
 
-
+Route::get('/agri_view', 'ManagerController@agri_mainpage');
 Route::get('/dash', 'SupplierController@dashboard');
 //crops-disease
 Route::get('/disease', 'CropsDiseaseController@disease_form');
 Route::post('/disinfo', 'CropsDiseaseController@disease_sample')->name('disease.store');
 
 //disease input
-//Route::get('/assign/{id}', 'ManagerController@assign_disease');
+Route::get('/assigned/{id}', 'ManagerController@crops_report');
 
 Route::get('/rep', 'CropsDiseaseController@dashboard');
 

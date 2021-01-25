@@ -13,6 +13,7 @@ class AssignManagerController extends Controller
         $assign=new assign_manager();
         $assign->farmer_id=$request->man_id;
         $assign->manager_name=$request->man;
+        $assign->invoice_id= $request->man_id;
         $assign->save();
         return redirect('/crops_view');
     }

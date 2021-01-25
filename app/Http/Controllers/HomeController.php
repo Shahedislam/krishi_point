@@ -44,7 +44,7 @@ if($user_type==1)
         }
         if($user_type==5)
         {
-            return redirect('crops');
+            return redirect('agri_view');
         }
     }
 }

@@ -15,14 +15,13 @@ class CreateTestersTable extends Migration
     {
         Schema::create('testers', function (Blueprint $table) {
             $table->id();
-            $table->string("name");
-            $table->string("address");
-            $table->string("phone_no");
-            $table->string("user_id");
-            $table->string("email");
-            $table->string("designation");
-            $table->string("institute");
-            $table->string("password");
+            $table->string("name")->nullable();
+            $table->string("address")->nullable();
+            $table->string("phone_no")->nullable();
+            $table->string("user_id")->nullable();
+            $table->string("email")->nullable();
+            $table->string("designation")->nullable();
+            $table->string("institute")->nullable();
             $table->timestamps();
         });
     }

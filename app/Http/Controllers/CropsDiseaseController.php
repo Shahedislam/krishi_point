@@ -17,14 +17,18 @@ class CropsDiseaseController extends Controller
     {
         $disease=new crops_disease();
         $disease->crops_name= $request->cname;
-        $disease->crops_syptoms_1=$request->crops_syptoms_1;
-        $disease->crops_syptoms_2=$request->crops_syptoms_2;
-        $disease->crops_syptoms_3=$request->crops_syptoms_3;
-        $disease->crops_syptoms_4=$request->crops_syptoms_4;
-        $disease->crops_syptoms_5=$request->crops_syptoms_5;
-        $disease->remedy_1= $request->remedy_1;
-        $disease->remedy_2= $request->remedy_2;
-        $disease->remedy_3= $request->remedy_3;
+        $disease->test_id= $request->test_id;
+        $disease->invoice_id= $request->invoice_id;
+        $disease->crops_id= $request->crops_id;
+        $disease->crops_name= $request->crops_name;
+        $disease->farmer_id= $request->farmer_id;
+        $disease->farmer_name=$request->farmer_name;
+        $disease->address=$request->address;
+        $disease->dname=$request->dname;
+        $disease->phone_no=$request->phone_no;
+        $disease->crops_syptoms= $request->crops_syptoms;
+        $disease->remedy= $request->remedy;
+        $disease->date= $request->date;
         $disease->save();
         $disease_info=crops_disease::where('id',$disease->id)->first();
 

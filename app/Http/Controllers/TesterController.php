@@ -30,7 +30,6 @@ class TesterController extends Controller
         $test->user_id=$worker->id;
         $test->phone_no= $request->PHONE_NO;
         $test->email = $request->Email;
-        $test->password= $request->password;
         $test->designation= $request->designation;
         $test->institute= $request->institute;
         $test->save();

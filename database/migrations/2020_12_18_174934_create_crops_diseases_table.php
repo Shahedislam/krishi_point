@@ -15,16 +15,17 @@ class CreateCropsDiseasesTable extends Migration
     {
         Schema::create('crops_diseases', function (Blueprint $table) {
             $table->id();
-            $table->string("crops_name");
-            $table->string("crops_syptoms_1")->nullable();
-            $table->string("crops_syptoms_2")->nullable();
-            $table->string("crops_syptoms_3")->nullable();
-            $table->string("crops_syptoms_4")->nullable();
-            $table->string("crops_syptoms_5")->nullable();
-            $table->string("remedy_1")->nullable();
-            $table->string("remedy_2")->nullable();
-            $table->string("remedy_3")->nullable();
-
+            $table->string("test_id")->nullable();
+            $table->string("invoice_id")->nullable();
+            $table->string("crops_id")->nullable();
+            $table->string("crops_name")->nullable();
+            $table->string("farmer_id")->nullable();
+            $table->string("farmer_name")->nullable();
+            $table->string("address")->nullable();
+            $table->string("phone_no")->nullable();
+            $table->string("dname")->nullable();
+            $table->string("crops_syptoms")->nullable();
+            $table->string("remedy")->nullable();
             $table->timestamps();
         });
     }
