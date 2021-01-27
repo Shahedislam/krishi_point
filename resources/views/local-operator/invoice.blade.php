@@ -118,18 +118,18 @@
                                 <div class="row">
 
                                     <div class="col-md-12">
-                                        Total Ammount : {{$soil_info->total_price}}
-                                    </div>
-                                    <br><br>
-                                    <div class="col-md-12">
-                                        <strong> Paid Amount : {{$soil_info->total_price}} </strong>
+                                        Total Ammount : {{$soil_info->total_price}} &nbsp
+
+
+
+                                         Paid Amount : {{$soil_info->total_price}} </strong>
                                     </div>
                                 </div>
 
-                        <br><br><br>
+                        <br><br>
                         <div class="row">
                             <div class="col-md-8"></div>
-                            <div class="col-md-4 text-right">
+                            <div class="col-md-4 text-center">
                                 <p > <strong>Report Finalized By</strong></p>
                                 <p>
                                     @php

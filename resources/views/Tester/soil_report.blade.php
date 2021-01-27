@@ -75,8 +75,8 @@
                            <p class="text-center"> <strong>{{ date("d M,Y",strtotime($result->date)) }}</strong>  </p>
 
                             <h5 class="text-center"> Invoice Number </h5>
-                            <h5>{{$result->invoice_id}}</h5>
-                            <p class="text-center" style="color:black" ><strong style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;"> Customer Copy</strong></p>
+                            <h5 class="text-center">{{$result->invoice_id}}</h5>
+                            <p class="text-center" style="color:black" ><strong style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;"> Farmers Copy</strong></p>
                         </div>
                     </div>
                     <br> <br>

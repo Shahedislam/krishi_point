@@ -52,16 +52,18 @@
                                                 <th>Action</th>
 
                                             </tr>
+                                            @foreach($crops_info as $crops)
                                             <tr>
-                                                <td>{{$crops_info->NAME}}</td>
-                                                <td>{{$crops_info->FARMER_ID}}
-                                                <td>{{$crops_info->PHONE_NO}}</td>
-                                                <td>{{$crops_info->ADDRESS}}</td>
-                                                <td>{{$crops_info->test_name}}</td>
-                                                <td>{{$crops_info->CROPS_NAME}}</td>
-                                                <td>{{$crops_info->Payment_number}}</td>
-                                                <td><a href='assigned/{{$crops_info->id}}' class="btn btn-warning">Make Report</a></td>
+                                             <td>{{$crops->NAME}}</td>
+                                                <td>{{$crops->FARMER_ID}}
+                                                <td>{{$crops->PHONE_NO}}</td>
+                                                <td>{{$crops->ADDRESS}}</td>
+                                                <td>{{$crops->test_name}}</td>
+                                                <td>{{$crops->CROPS_NAME}}</td>
+                                                <td>{{$crops->Payment_number}}</td>
+                                                <td><a href='assigned/{{$crops->id}}' class="btn btn-warning">Make Report</a></td>
                                             </tr>
+                                            @endforeach
                                             <tr>
 
 
@@ -131,4 +133,4 @@
 
 </html>
 
-
+@endsection

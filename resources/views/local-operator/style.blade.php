@@ -98,7 +98,7 @@
                             <ul aria-expanded="false">
                                 <li><a href='soil'>Soil Form</a></li>
                                 <li><a href='soilview'>View Sample</a></li>
-                                <li><a href='supplierassign'>Assign Supplier</a></li>
+
 
                             </ul>
                         </li>
@@ -109,7 +109,7 @@
                             <ul aria-expanded="false">
                                 <li><a href='crops'>Crops Form</a></li>
                                 <li><a href='crops_view'>Crops View</a></li>
-                                <li><a href='calendar-list.html'>Assign Mananger</a></li>
+
 
                             </ul>
                         </li>

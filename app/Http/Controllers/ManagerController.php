@@ -45,7 +45,7 @@ class ManagerController extends Controller
         $crops_info=DB::table("crops_samples")
             ->join("payments","crops_samples.id","payments.farmer_id")
             ->select("crops_samples.NAME","crops_samples.FARMER_ID","crops_samples.PHONE_NO","crops_samples.ADDRESS","crops_samples.CROPS_NAME","payments.Payment_number","payments.test_name","payments.farmer_id","crops_samples.CROPS_ID")
-            ->where ('payments.id',$id)->first();
+            ->where ('payments.id',$id)->get();
         $manager_info=manager::all();
 
         return view('local-operator.manager_view',compact('crops_info','manager_info'));
@@ -53,7 +53,14 @@ class ManagerController extends Controller
 
     public function farmer_sample()
     {
-        $crops_info=DB::table("crops_samples")->join("payments","crops_samples.id","payments.farmer_id")->join("assign_managers","assign_managers.farmer_id","payments.id")->join("managers","managers.user_id","assign_managers.manager_name")->where('assign_managers.manager_name',Auth::id())->orderBy('assign_managers.id','desc')->first();
+
+        $crops_info=DB::table("crops_samples")
+
+            ->join("payments","crops_samples.id","payments.farmer_id")
+            ->join("assign_managers","assign_managers.farmer_id","payments.farmer_id")
+            ->join("managers","managers.user_id","assign_managers.manager_name")
+            ->select('payments.Payment_number','payments.test_name','crops_samples.id','crops_samples.NAME','crops_samples.FARMER_ID','crops_samples.PHONE_NO','crops_samples.ADDRESS','crops_samples.CROPS_NAME','crops_samples.CROPS_ID','assign_managers.id')
+            ->where('assign_managers.manager_name',Auth::id())->orderBy('assign_managers.id','desc')->get();
 
         return view('local-operator.manager_view_sample',compact('crops_info'));
     }
@@ -67,11 +74,11 @@ class ManagerController extends Controller
             ->join("payments","crops_samples.id","payments.farmer_id")
             ->join("assign_managers","assign_managers.invoice_id","crops_samples.id")
             ->join("managers","managers.user_id","assign_managers.manager_name")
-            ->select('crops_samples.NAME','crops_samples.FARMER_ID','crops_samples.CROPS_ID','crops_samples.ADDRESS','crops_samples.PHONE_NO','assign_managers.invoice_id','assign_managers.id')
+            ->select('crops_samples.NAME','crops_samples.FARMER_ID','crops_samples.CROPS_ID','crops_samples.ADDRESS','crops_samples.PHONE_NO','crops_samples.CROPS_NAME','assign_managers.invoice_id','assign_managers.id')
             ->where('assign_managers.manager_name',Auth::id())
             ->where ('assign_managers.id',$id)
             ->orderBy('assign_managers.id','desc')->first();
-
+//dd($crops_info);
         return view('local-operator.disease_info',compact('crops_info'));
     }
 

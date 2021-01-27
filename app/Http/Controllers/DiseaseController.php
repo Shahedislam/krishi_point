@@ -1,21 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\disease;
 
-use App\crops_disease;
 use Illuminate\Http\Request;
 
-class CropsDiseaseController extends Controller
+class DiseaseController extends Controller
 {
     //
-    public function disease_form()
-    {
-        return view('local-operator.disease_info');
-    }
-
     public function disease_sample(Request $request)
     {
-        $disease=new crops_disease();
+        $disease=new disease();
         $disease->crops_name= $request->cname;
         $disease->test_id= $request->test_id;
         $disease->invoice_id= $request->invoice_id;
@@ -30,15 +25,17 @@ class CropsDiseaseController extends Controller
         $disease->remedy= $request->remedy;
         $disease->date= $request->date;
         $disease->save();
-        $disease_info=crops_disease::where('id',$disease->id)->first();
+        //$disease_info=disease::where('id',$disease->id)->first();
 
-        return redirect('/disinfo');
+        return redirect('/crops_report/'.$disease->id);
 
     }
 
-    public function disease_view()
+    public function disease_view($id)
     {
-        return view('local-operator.disease_report');
+        $result=disease::find($id);
+
+        return view('local-operator.disease_report',compact('result'));
     }
 
 }

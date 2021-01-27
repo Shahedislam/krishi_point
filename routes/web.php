@@ -105,8 +105,9 @@ Route::get('/agri_view', 'ManagerController@agri_mainpage');
 Route::get('/dash', 'SupplierController@dashboard');
 //crops-disease
 Route::get('/disease', 'CropsDiseaseController@disease_form');
-Route::post('/disinfo', 'CropsDiseaseController@disease_sample')->name('disease.store');
+Route::post('/disinfo', 'DiseaseController@disease_sample')->name('disease.store');
 
+Route::get('/crops_report/{id}', 'DiseaseController@disease_view');
 //disease input
 Route::get('/assigned/{id}', 'ManagerController@crops_report');
 

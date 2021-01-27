@@ -22,7 +22,7 @@
                             <div class="card-body">
                                 <form id="info" action="{{ route("disease.store") }}" method="POST">
                                     @csrf
-                                    <input type="hidden" name="crops_id" value="{{$crops_info->crops_ID}}">
+                                    <input type="hidden" name="crops_id" value="{{$crops_info->CROPS_ID}}">
                                     <input type="hidden" name="farmer_id" value="{{$crops_info->FARMER_ID}}">
                                     <input type="hidden" name="farmer_name" value="{{$crops_info->NAME}}">
                                     <input type="hidden" name="crops_name" value="{{$crops_info->CROPS_NAME}}">
@@ -143,7 +143,7 @@
                                     <div class="form-group">
                                         <label class="control-label" for="ADDRESS">Crops_Symtops</label>
                                         <div class="mb-2">
-                                            <textarea name="Symptomps" class="form-control" id="crops_syptoms"></textarea>
+                                            <textarea name="crops_syptoms" class="form-control" id="crops_syptoms"></textarea>
                                         </div>
                                     </div>
                                         </div>
@@ -180,6 +180,17 @@
         </div>
         <!-- end app-main -->
     </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+                <p>&copy; Copyright 2019. All rights reserved.</p>
+            </div>
+            <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
+                <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+            </div>
+        </div>
+    </footer>
+
     <!-- end app-container -->
     <!-- begin footer -->
 @endsection
