@@ -94,8 +94,13 @@
                         </li>
 
 
-                        <ul aria-expanded="false">
+                        <ul class="metismenu " id="sidebarNav">
                             <li><a href='testview'>receive sample</a></li>
+
+
+                        </ul>
+                        <ul class="metismenu " id="sidebarNav">
+                            <li><a href='sendreport'>Sample Send</a></li>
 
 
                         </ul>

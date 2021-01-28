@@ -16,6 +16,7 @@ class CreateProduceResultsTable extends Migration
         Schema::create('produce_results', function (Blueprint $table) {
             $table->id();
             $table->string("labtest_id")->nullable();
+            $table->string("inserted_by")->nullable();
             $table->string("invoice_id")->nullable();
             $table->string("soil_id")->nullable();
             $table->string("farmer_id")->nullable();

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\produce_result;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ResultController extends Controller
 {
@@ -33,7 +34,7 @@ class ResultController extends Controller
         $result->comment= $request->comment;
         $result->result= $request->result;
         $result->date= $request->date;
-
+        $result->inserted_by= Auth::id();
 
         $result->save();
 

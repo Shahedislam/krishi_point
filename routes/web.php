@@ -145,6 +145,8 @@ Route::get('/samplecrops', 'ProgramController@crops_sample');
 
 Route::get('/testerhome', 'TesterController@view_homepage');
 
+Route::get('/sendreport', 'TesterController@report_send');
+
 Route::get('/report/{id}', 'ReportController@make_report');
 
 //////make result of soil
@@ -165,3 +167,4 @@ Route::get('view_invoice', 'invoice@invoice_details');
 //login
 Route::get('/sytemlogin', 'ProgramController@view_login');
 
+Route::post('/delreport', 'DeliveryReportController@reg')->name('deliveryreport.store');
