@@ -89,6 +89,14 @@ public function sup_mainpage()
         return redirect('admin');
     }
 
+    public function report_view()
+    {
+     $view=DB::table("suppliers")
+    ->join("delivery_reports","suppliers.id","delivery_reports.supplier_id")->where('suppliers.user_id',Auth::id())
+     ->select('delivery_reports.report_id')->get();
+     return view('supplier.report_view',compact('view'));
+    }
+
 
 
 

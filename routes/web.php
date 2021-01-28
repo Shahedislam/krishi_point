@@ -65,7 +65,7 @@ Route::post('/crinvoice', 'PaymentController@payment_crops')->name('crops_paymen
 Route::get('/homepage', 'SupplierController@sup_mainpage');
 Route::get('/info', 'SupplierController@supplier_info');
 
-
+Route::get('/reportview', 'SupplierController@report_view');
 
 
 Route::post('/infostore', 'SupplierController@reg')->name('info.store');

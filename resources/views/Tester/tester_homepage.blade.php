@@ -100,7 +100,7 @@
 
                         </ul>
                         <ul class="metismenu " id="sidebarNav">
-                            <li><a href='sendreport'>Sample Send</a></li>
+                            <li><a href='/sendreport'>Sample Send</a></li>
 
 
                         </ul>

@@ -47,11 +47,11 @@
 
                                                 <button onclick="setReportID(this)" data-id="{{ $soil->id }}"
                                                         class="btn btn-primary" data-toggle="modal"
-                                                        data-target="#loginModal">View Modal
+                                                        data-target="#loginModal">Send Report
                                                 </button>
 
 
-                                                / <a
+                                                 <a
                                                     href="/make_result/{{$soil->id}}"
                                                     class="btn btn-warning"> View Report</a>
                                             </td>
@@ -99,7 +99,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Login</h5>
+                        <h5 class="modal-title">Assign</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -124,7 +124,7 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remember</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">LOGIN</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </div>

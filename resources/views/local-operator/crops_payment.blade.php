@@ -39,15 +39,15 @@
                                     <div class="form-group">
                                         <label class="control-label" for="lastname1">Test Name</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="test_name" name="test_name" placeholder="Test Name" />
+                                            <input type="text" class="form-control" id="test_name" name="test_name"  value="Crops-Sample" placeholder="Test Name" />
                                         </div>
                                     </div>
                                         </div>
                                         <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="username1">Cost</label>
+                                        <label class="control-label" for="username1">Paid Amount</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="price" name="price" placeholder="Cost" />
+                                            <input type="text" class="form-control" id="price" name="price" placeholder="paid" />
                                         </div>
                                     </div>
                                         </div>
@@ -55,7 +55,7 @@
                                     <div class="form-group">
                                         <label class="control-label" for="test_count">Test count</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="test_count" name="test_count" placeholder="Test Quantity" />
+                                            <input type="text" class="form-control" id="test_count" name="test_count" placeholder="Test Quantity" value="1" disabled="" />
                                         </div>
                                     </div>
                                         </div>

@@ -115,11 +115,11 @@
                         </li>
 
 
-                        <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span
-                                    class="nav-title">Invoice</span></a></li>
+{{--                        <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span--}}
+{{--                                    class="nav-title">Invoice</span></a></li>--}}
 
-                        <li><a href="mail-inbox.html" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span
-                                    class="nav-title">Report Collect</span></a></li>
+{{--                        <li><a href="mail-inbox.html" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span--}}
+{{--                                    class="nav-title">Report Collect</span></a></li>--}}
                         <li><a  href="{{ route('logout') }}" aria-expanded="false"   onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="nav-icon ti ti-email"></i><span
                                     class="nav-title">Log Out</span></a></li>

@@ -5,89 +5,93 @@
         <!-- begin container-fluid -->
         <div class="container-fluid">
 
-        <!-- end row -->
-                    <!-- start Validation row -->
+            <!-- end row -->
+            <!-- start Validation row -->
 
-                    <div class="col-sm-12 col-lg-12 col-xxl-12 mb-30">
-                        <div class="card card-statistics">
-                            <div class="card-header">
-                                <div class="card-heading">
-                                    <h4 class="card-title">Payment Process</h4>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <form id="soil" action="{{ route("payment.store") }}" method="POST">
-                                    @csrf
-                                    <input type="hidden" name="soil_id" value="{{$soil_id}}">
-                                    <div class="form-row">
-                                        <div class="col-md-4">
+            <div class="col-sm-12 col-lg-12 col-xxl-12 mb-30">
+                <div class="card card-statistics">
+                    <div class="card-header">
+                        <div class="card-heading">
+                            <h4 class="card-title">Payment Process</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form id="soil" action="{{ route("payment.store") }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="soil_id" value="{{$soil_id}}">
+                            <div class="form-row">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="firstname1">Payment Number</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="Payment_Number" name="Payment_Number" placeholder="Payment Number" />
+                                            <input type="text" class="form-control" id="Payment_Number"
+                                                   name="Payment_Number" placeholder="Payment Number"/>
                                         </div>
                                     </div>
-                                    </div>
-                                            <div class="col-md-4">
+                                </div>
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="lastname1">Test Name</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="test_name" name="test_name" placeholder="Test Name" />
+                                            <input type="text" class="form-control" id="test_name" name="test_name"
+                                                   value="Soil-Sample"    placeholder="Test Name"/>
                                         </div>
                                     </div>
-                                            </div>
-                                            <div class="col-md-4">
+                                </div>
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label class="control-label" for="username1">Cost</label>
+                                        <label class="control-label" for="username1">Paid Amount</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="price" name="price" placeholder="Cost" />
+                                            <input type="text" class="form-control" id="price" name="price"
+                                                   placeholder="Paid"/>
                                         </div>
                                     </div>
-                                            </div>
-                                            <div class="col-md-4">
+                                </div>
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="test_count">Test Count</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="test_count" name="test_count" placeholder="Test Quantity" />
+                                            <input type="text" class="form-control" id="test_count" name="test_count"
+                                                value="1" disabled  placeholder="Test Quantity"/>
                                         </div>
                                     </div>
-                                    </div>
-                                            <div class="col-md-4">
+                                </div>
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="control-label" for="SOIL-ID">Total Price</label>
                                         <div class="mb-2">
-                                            <input type="text" class="form-control" id="total_price" name="total_price" placeholder="total_price" />
+                                            <input type="text" class="form-control" id="total_price" name="total_price"
+                                                   placeholder="total_price"/>
                                         </div>
                                     </div>
-                                            </div>
-                                            </div>
-
-
-
-                                            <div class="form-row">
-                                                <div class="col-md-4">
-
-                                                </div>
-                                                <div class="col-md-6">
-
-
-
-
-                                                <div class="form-group">
-                                        <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">Submit</button>
-                                    </div>
-                                </form>
-
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
+
+                            <div class="form-row">
+                                <div class="col-md-4">
+
+                                </div>
+                                <div class="col-md-6">
+
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" name="signup1" value="Sign up">
+                                            Submit
+                                        </button>
+                                    </div>
+                        </form>
+
+                    </div>
                 </div>
-                <!-- end Validation row  -->
             </div>
-            <!-- end container-fluid -->
+
         </div>
-        <!-- end app-main -->
+        <!-- end Validation row  -->
+    </div>
+    <!-- end container-fluid -->
+    </div>
+    <!-- end app-main -->
     </div>
     <!-- end app-container -->
     <!-- begin footer -->

@@ -100,6 +100,11 @@
 
                         </ul>
 
+                        <ul aria-expanded="false">
+                            <li><a href='reportview'>view report</a></li>
+
+
+                        </ul>
 
 
 

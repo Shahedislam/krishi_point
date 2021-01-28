@@ -132,26 +132,13 @@
                         </tr>
                         <tr>
                             <th>Total Percentance</th>
-                            <th></th>
+                            <th>{{$result->Phs+$result->phosphorus+$result->potassium+$result->organic_matter+$result->cec+$result->nitrogen+$result->potash+$result->zinc+$result->acidity+$result->sulfer}}</th>
                         </tr>
 
 
 
 
                         </tr>
-                        {{--                            <tr>--}}
-{{--                        <tr>--}}
-{{--                            <td>{{$result->Phs}}</td>--}}
-{{--                            <td>{{$result->phosphorus}}</td>--}}
-{{--                            <td>{{$result->potassium}}</td>--}}
-{{--                            <td>{{$result->calcium}}</td>--}}
-{{--                            <td>{{$result->organic_matter}}</td>--}}
-{{--                            <td>{{$result->cec}}</td>--}}
-{{--                            <td>{{$result->nitrogen}}</td>--}}
-{{--                            <td>{{$result->potash}}</td>--}}
-{{--                            <td>{{$result->zinc}}</td>--}}
-{{--                            <td>{{$result->lime}}</td>--}}
-{{--                        </tr>--}}
 
                     </table>
                     <br><br><br>

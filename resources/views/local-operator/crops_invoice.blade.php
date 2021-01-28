@@ -5,7 +5,7 @@
     <!-- begin container-fluid -->
     <div class="container-fluid">
         <!-- begin row -->
-        <div class="row card " id="printdata">
+        <div class="row card p-4 " id="printdata">
 
             <div class="col-md-12 m-b-30">
                 <!-- begin page title -->
@@ -22,8 +22,8 @@
                 <h4 class="text-center ">Invoice Report</h4>
                 <hr>
                 <div class="row">
-                    <div class="col-md-6" >
-                        <table  style="font-size: 14px">
+                    <div class="col-md-6">
+                        <table style="font-size: 14px">
                             <tr>
                                 <td></td>
                                 <td class="meta-head">Invoice Number</td>
@@ -76,10 +76,13 @@
 
                     <div class="col-md-6 text-right">
 
-                        <p class="text-center"> <strong>{{ date("d M,Y",strtotime($crops_info->date)) }}</strong>  </p>
+                        <p class="text-center"><strong>{{$crops_info->date }}</strong></p>
                         <h5 class="text-center"> Invoice Number </h5>
+                        <h5 class="text-center"> {{$crops_info->id }}</h5>
                         <h5></h5>
-                        <p class="text-center" style="color:black" ><strong style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;"> Farmers Crops Receipt</strong></p>
+                        <p class="text-center" style="color:black"><strong
+                                style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;">
+                                 Crops Receipt</strong></p>
                     </div>
                 </div>
 
@@ -91,17 +94,17 @@
                 <tr>
                     <th>Payment Number</th>
                     <th>Test Name</th>
-                    <th>Cost</th>
-                    <th>Quantity</th>
-                    <th>Total Cost</th>
+                    <th>Test Price</th>
+
+
+
                 </tr>
                 <tr>
 
                     <td>{{$crops_info->Payment_number}}</td>
                     <td>{{$crops_info->test_name}}</td>
-                    <td>{{$crops_info->price}}</td>
-                    <td>{{$crops_info->test_count}}</td>
                     <td>{{$crops_info->total_price}}</td>
+
                 </tr>
             </table>
             {{--<tr>
@@ -118,37 +121,41 @@
             <div class="row">
 
                 <div class="col-md-12">
-                    Total Ammount : {{$crops_info->total_price}} &nbsp
+                    Total Amount : {{$crops_info->total_price}} <br>
 
 
-
-                    Paid Amount : {{$crops_info->total_price}} </strong>
+                    Paid Amount : {{$crops_info->price}} </strong>
+                    <br>
+                    <strong style="color: red">  Due </strong>: {{ $crops_info->total_price -$crops_info->price }}
                 </div>
             </div>
 
-            <br><br>
-            <div class="row">
+
+            <div class="form-row">
                 <div class="col-md-8"></div>
                 <div class="col-md-4 text-center">
-                    <p > <strong>Report Finalized By</strong></p>
+                    <p><strong> Receipt By</strong></p>
                     <p>
                         @php
-                            echo \Illuminate\Support\Facades\Auth::user()->name;
-                        @endphp
+                            @endphp
                     </p>
                     <p>-----------------------------------</p>
                     Date: {{ date("d/m/Y") }}
+                    <br>
+
+                    <br>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-success" onclick="printDiv('printdata')">Print
+                        </button>
+
+                    </div>
+
                 </div>
 
             </div>
 
 
 
-            <div class="modal-footer">
-
-                <button type="button" class="btn btn-success" onclick="printDiv('printdata')">print
-                </button>
-            </div>
 
 
             <!-- end row -->
