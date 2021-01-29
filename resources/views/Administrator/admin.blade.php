@@ -83,7 +83,14 @@
                 <!-- begin sidebar-nav -->
                 <div class="sidebar-nav scrollbar scroll_light">
                     <ul class="metismenu " id="sidebarNav">
+                        <li>
+                            <a class="has-arrow" href="/dashboard" aria-expanded="false">
+                                <i class="nav-icon ti ti-rocket"></i>
+                                <span class="nav-title">Dashboards</span>
 
+                            </a>
+
+                        </li>
 
                         <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i
                                     class="nav-icon ti ti-calendar"></i><span
@@ -142,16 +149,7 @@
 
         <!-- end app-container -->
         <!-- begin footer -->
-        <footer class="footer">
-            <div class="row">
-                <div class="col-12 col-sm-6 text-center text-sm-left">
-                    <p>&copy; Copyright 2019. All rights reserved.</p>
-                </div>
-                <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
-                    <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-                </div>
-            </div>
-        </footer>
+
         <!-- end footer -->
     </div>
     <!-- end app-wrap -->

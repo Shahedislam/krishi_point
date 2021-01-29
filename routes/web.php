@@ -81,7 +81,9 @@ Route::get('/supplierassign', 'AssignSupplierController@supplier_view')->name('a
 Route::get('/sampleview', 'SupplierController@farmer_sample');
 
 
+Route::get('/dashboard', 'ProgramController@dashboard');
 
+Route::get('/dashlocal', 'ProgramController@dashlocal');
 
 
 

@@ -85,7 +85,7 @@
                     <ul class="metismenu " id="sidebarNav">
                         <li class="nav-static-title">Personal</li>
                         <li>
-                            <a class="" href="" aria-expanded="false">
+                            <a class="has-arrow" href="dashlocal" aria-expanded="false">
                                 <i class="nav-icon ti ti-rocket"></i>
                                 <span class="nav-title">Dashboards</span>
 

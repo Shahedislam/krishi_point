@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\operator;
+use App\supplier;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,24 +29,25 @@ class HomeController extends Controller
 $user_type=Auth::user()->user_type;
 if($user_type==1)
 {
-    return redirect('admin');
+
+    return redirect('dashboard');
 }
         if($user_type==2)
         {
-            return redirect('index-operator');
+            return redirect('dashlocal');
         }
 
         if($user_type==3)
         {
-            return redirect('homepage');
+            return redirect('sampleview');
         }
         if($user_type==4)
         {
-            return redirect('testerhome');
+            return redirect('testview');
         }
         if($user_type==5)
         {
-            return redirect('agri_view');
+            return redirect('sample_crops');
         }
     }
 }

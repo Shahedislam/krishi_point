@@ -1,8 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\crops_sample;
+use App\manager;
+use App\operator;
+use App\payment;
+use App\produce_result;
 use App\program;
 
+use App\supplier;
+use App\tester;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -57,5 +64,27 @@ class ProgramController extends Controller
     {
         return view('auth-login');
     }
+    public function dashboard()
+    {
+        $dash=count(operator::all());
+        $dash2=count(tester::all());
+        $dash3=count(supplier::all());
+        $dash4=count(manager::all());
+
+        return view('Administrator.index',compact('dash','dash2','dash3','dash4'));
+    }
+    public function dashlocal()
+    {
+        $dash=count(payment::all());
+        $dash2=count(crops_sample::all());
+        $dash3=count(program::all());
+        $dash4=count(produce_result::all());
+
+
+
+        return view('local-operator.index',compact('dash','dash2','dash3','dash4'));
+    }
+
+
 
 }

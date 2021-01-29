@@ -84,14 +84,7 @@
                 <div class="sidebar-nav scrollbar scroll_light">
                     <ul class="metismenu " id="sidebarNav">
                         <li class="nav-static-title">Personal</li>
-                        <li>
-                            <a class="" href="" aria-expanded="false">
-                                <i class="nav-icon ti ti-rocket"></i>
-                                <span class="nav-title">Dashboards</span>
 
-                            </a>
-
-                        </li>
 
 
                         <ul aria-expanded="false">

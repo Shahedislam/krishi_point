@@ -78,7 +78,7 @@
 
 
                         <h5 class="text-center"> Invoice Number </h5>
-                        <h5 class="text-center">$soil_info->id</h5>
+                        <h5 class="text-center">{{$soil_info->id}}</h5>
                         <h5></h5>
                         <p class="text-center" style="color:black"><strong
                                 style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;">
